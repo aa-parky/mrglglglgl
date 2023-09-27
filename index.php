@@ -20,18 +20,22 @@
     <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
-    <div class="container">
-        <img src="img/landing00.png" alt="Centered Image">
-        <p>
+<div class="image-container">
+    <blockquote class="electric bubble">Mrglglglgl<br> Lumps!</blockquote>
+    <blockquote class="speech bubble">Sheep?</blockquote>
+    <img src="img/landing00.png" alt="Centered Image">
+    <p>
         <?php
-            $lines = file('data/slug_lines.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-            if ($lines && count($lines) > 0) {
-                echo '' . $lines[array_rand($lines)] . '';
-            } else {
-                echo '"Where Epic Fails Meet Murloc Wails!"';  // default text in case the file is empty or there's an error reading it
-            }
+        $lines = file('data/slug_lines.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        if ($lines && count($lines) > 0) {
+            echo '' . $lines[array_rand($lines)] . '';
+        } else {
+            echo '"Where Epic Fails Meet Murloc Wails!"';  // default text in case the file is empty or there's an error reading it
+        }
         ?>
         </p>
-    </div>
+
+</div>
+
 </body>
 </html>
