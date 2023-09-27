@@ -15,8 +15,8 @@ body, html {
 }
 
 .container img {
-    width: 800px;
-    height: 800px;
+    max-width: 100%; /* ensure image does not overflow on smaller screens */
+    height: auto; /* allow height to adjust automatically */
     object-fit: cover;
     border: #333 15px solid;
 }
@@ -24,6 +24,18 @@ body, html {
 .container p {
     font-family: 'Bangers', cursive;
     margin-top: 20px;
-    font-size: 58px;
+    font-size: 24px; /* adjusted to a smaller size for better mobile viewing */
     color: #333;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .container img {
+        width: 800px; /* apply fixed width for larger screens */
+        height: 800px; /* apply fixed height for larger screens */
+    }
+
+    .container p {
+        font-size: 58px; /* larger font size for larger screens */
+    }
 }
