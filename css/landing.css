@@ -1,41 +1,76 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3f3f3;
+    background-color: #eceee1;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+/* speech bubbles*/
+
+* { 
+box-sizing: border-box;
+}
+body { 
+font-family: 'Bangers'; 
+font-size: clamp(1.5rem, 2.5vw, 3rem);
+margin: 0;
 }
 
-.container img {
-    max-width: 100%; /* ensure image does not overflow on smaller screens */
-    height: auto; /* allow height to adjust automatically */
-    object-fit: cover;
-    border: #333 15px solid;
+blockquote.bubble { 
+background-position: center;
+background-repeat: no-repeat !important;
+background-size: 100% 100%;
+margin: 0 auto;
+text-align: center;
+height: 0;
+box-sizing: content-box;
+line-height: 1;
+}
+blockquote.speech {
+background: url(../data/speech-bubble.svg); 
+width: 25%;
+padding-top: 6%;
+padding-bottom: 20%;
+}
+blockquote.whisper {
+background: url(../data/whisper.svg); /* whisper.svg */
+width: 25%;
+font-size: clamp(1.5rem, 2.5vw, 3rem);
+color: #ccc;
+font-style: italic;
+padding: 6% 5% 15%;
+}
+blockquote.electric {
+background: url(../data/electric.svg); /* electric.svg*/
+width: 25%;
+font-size: clamp(1rem, 2vw, 2.5vw);
+font-style: italic;
+padding: 4% 6% 12% 0%;
+}
+blockquote.electric span {
+display: block;
+font-size: clamp(1rem, 2vw, 2.5vw);
+font-weight: bold;
 }
 
-.container p {
-    font-family: 'Bangers', cursive;
-    margin-top: 20px;
-    font-size: 24px; /* adjusted to a smaller size for better mobile viewing */
-    color: #333;
+/* Image positioning */
+
+.image-container {
+    position: relative;
+    width: 1024px;   /* width of the image */
+    height: 1024px;  /* height of the image */
+    margin: 0 auto;  /* centering the container if needed */
 }
 
-/* Media query for larger screens */
-@media screen and (min-width: 768px) {
-    .container img {
-        width: 800px; /* apply fixed width for larger screens */
-        height: 800px; /* apply fixed height for larger screens */
-    }
+blockquote.bubble {
+    position: absolute;
+}
 
-    .container p {
-        font-size: 58px; /* larger font size for larger screens */
-    }
+blockquote.electric {
+    top: 8%;  /* adjust these values as needed */
+    right: 55%;
+    z-index: 1;
+}
+
+blockquote.speech {
+    top: 70%;  /* adjust these values as needed */
+    left: 65%;
+    z-index: 1;
 }
