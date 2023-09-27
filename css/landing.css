@@ -15,8 +15,8 @@ body, html {
 }
 
 .container img {
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     object-fit: cover;
     border: #333 15px solid;
 }
@@ -24,6 +24,6 @@ body, html {
 .container p {
     font-family: 'Bangers', cursive;
     margin-top: 20px;
-    font-size: 82px;
+    font-size: 58px;
     color: #333;
 }
