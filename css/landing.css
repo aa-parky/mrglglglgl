@@ -91,7 +91,7 @@ blockquote.speech {
 .slug-line {
     text-align: center;  /* Centers the text horizontally */
     color: #60C7EA;  /* Sets the text color (you can choose your preferred color) */
-    font-size: 1.5rem;  /* Adjust font size as per your preference */
+    font-size: 1.8rem;  /* Adjust font size as per your preference */
     margin-top: 20px;  /* Adds some space between the image and the text */
     font-family: 'Bangers' cursive;  /* You can choose your preferred font from the ones you've loaded */
 }
