@@ -32,7 +32,7 @@ padding-bottom: 20%;
 blockquote.whisper {
 background: url(../data/whisper.svg); /* whisper.svg */
 width: 25%;
-font-size: clamp(1.5rem, 2.5vw, 3rem);
+font-size: clamp(1rem, 1.5rem, 2vw);
 color: #ccc;
 font-style: italic;
 padding: 6% 5% 15%;
@@ -40,13 +40,13 @@ padding: 6% 5% 15%;
 blockquote.electric {
 background: url(../data/electric.svg); /* electric.svg*/
 width: 25%;
-font-size: clamp(1rem, 2vw, 2.5vw);
+font-size: clamp(1rem, 1.5rem, 2vw);
 font-style: italic;
 padding: 4% 6% 12% 0%;
 }
 blockquote.electric span {
 display: block;
-font-size: clamp(1rem, 2vw, 2.5vw);
+font-size: clamp(1rem, 1.5rem, 2vw);
 font-weight: bold;
 }
 
@@ -64,13 +64,13 @@ blockquote.bubble {
 }
 
 blockquote.electric {
-    top: 8%;  /* adjust these values as needed */
-    right: 55%;
+    top: 40%;  /* adjust these values as needed */
+    right: 25%;
     z-index: 1;
 }
 
 blockquote.speech {
-    top: 70%;  /* adjust these values as needed */
-    left: 65%;
+    top: 95%;  /* adjust these values as needed */
+    left: 15%;
     z-index: 1;
 }
