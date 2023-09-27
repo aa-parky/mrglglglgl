@@ -11,13 +11,12 @@
 
     <title>Mrglglglgl.com Coming Soon!</title>
 
-    <!-- Importing the Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Crimson+Text:ital,wght@1,400;1,600&family=Lobster&display=swap" rel="stylesheet">
-
-    <!-- My stylesheet -->
-    <link rel="stylesheet" href="css/landing.css">
+   <!-- Importing the Google Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+   <!-- My stylesheet -->
+   <link rel="stylesheet" href="css/landing.css">
 </head>
 
 <body>
