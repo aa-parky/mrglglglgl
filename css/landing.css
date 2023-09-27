@@ -23,12 +23,14 @@ height: 0;
 box-sizing: content-box;
 line-height: 1;
 }
+
 blockquote.speech {
 background: url(../data/speech-bubble.svg); 
 width: 25%;
 padding-top: 6%;
 padding-bottom: 20%;
 }
+
 blockquote.whisper {
 background: url(../data/whisper.svg); /* whisper.svg */
 width: 25%;
@@ -37,6 +39,7 @@ color: #ccc;
 font-style: italic;
 padding: 6% 5% 15%;
 }
+
 blockquote.electric {
 background: url(../data/electric.svg); /* electric.svg*/
 width: 25%;
@@ -44,6 +47,7 @@ font-size: clamp(1rem, 1.5rem, 2vw);
 font-style: italic;
 padding: 4% 6% 12% 0%;
 }
+
 blockquote.electric span {
 display: block;
 font-size: clamp(1rem, 1.5rem, 2vw);
@@ -56,7 +60,7 @@ font-weight: bold;
     position: relative;
     width: 600px;   /* width of the image */
     height: 600px;  /* height of the image */
-    margin: 0 auto;  /* centering the container if needed */
+    margin: 50px auto 0;  /* 50px top, auto right and left, 0 bottom */
 }
 
 .image-container img {
