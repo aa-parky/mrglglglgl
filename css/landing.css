@@ -54,8 +54,8 @@ font-weight: bold;
 
 .image-container {
     position: relative;
-    width: 1024px;   /* width of the image */
-    height: 1024px;  /* height of the image */
+    width: 600px;   /* width of the image */
+    height: 600px;  /* height of the image */
     margin: 0 auto;  /* centering the container if needed */
 }
 
