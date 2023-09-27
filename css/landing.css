@@ -71,13 +71,13 @@ blockquote.bubble {
 }
 
 blockquote.electric {
-    top: 40%;  /* adjust these values as needed */
-    right: 25%;
+    top: 10%;  /* adjust these values as needed */
+    right: 55%;
     z-index: 1;
 }
 
 blockquote.speech {
-    top: 95%;  /* adjust these values as needed */
-    left: 15%;
+    top: 70%;  /* adjust these values as needed */
+    left: 55%;
     z-index: 1;
 }
