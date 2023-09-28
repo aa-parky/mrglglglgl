@@ -2,98 +2,100 @@ body, html {
     background-color: #0b5066;
 }
 
-/* speech bubbles*/
-
-* { 
-box-sizing: border-box;
-}
-body { 
-/*font-family: 'Bangers';*/ 
-font-size: clamp(1.5rem, 2.5vw, 3rem);
-margin: 0;
-}
-
-blockquote.bubble { 
-background-position: center;
-background-repeat: no-repeat !important;
-background-size: 100% 100%;
-margin: 0 auto;
-text-align: center;
-height: 0;
-box-sizing: content-box;
-line-height: 1;
-font-family: 'Bangers';
-}
-
-blockquote.speech {
-background: url(../data/IL-Speech.svg); 
-width: 25%;
-padding-top: 6%;
-padding-bottom: 20%;
-}
-
-blockquote.whisper {
-background: url(../data/IL-Whisper.svg); /* whisper.svg */
-width: 25%;
-font-size: clamp(1rem, 1.5rem, 2vw);
-color: #ccc;
-font-style: italic;
-padding: 6% 5% 15%;
-}
-
-blockquote.electric {
-background: url(../data/IL-Electric.svg); /* electric.svg*/
-width: 25%;
-font-size: clamp(1rem, 1.5rem, 2vw);
-font-style: italic;
-padding: 4% 6% 12% 0%;
-}
-
-blockquote.electric span {
-display: block;
-font-size: clamp(1rem, 1.5rem, 2vw);
-font-weight: bold;
-}
-
 /* Image positioning */
 
 .image-container {
     position: relative;
-    width: 600px;   /* width of the image */
-    height: 600px;  /* height of the image */
-    margin: 50px auto 0;  /* 50px top, auto right and left, 0 bottom */
+    width: 100%; /* Make the image container 100% width */
+    max-width: 600px; /* Set a max-width to the image container */
+    margin: 30px auto 0; /* Center the image horizontally */
 }
 
 .image-container img {
     width: 100%;
-    height: 100%;
-    display: block;  /* This removes any space caused by the inline-block nature of images */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    display: block;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
+/* speech bubbles*/
 
-blockquote.bubble {
+.speech {
     position: absolute;
+    font-family: "ccmeanwhile", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
-blockquote.electric {
-    top: 10%;  /* adjust these values as needed */
-    right: 55%;
-    z-index: 1;
+.speech-bottom-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 24px solid #fff;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 290px;
+    bottom: -24px;
 }
 
-blockquote.speech {
-    top: 70%;  /* adjust these values as needed */
-    left: 55%;
-    z-index: 1;
+.speech-bottom-right {
+    /* Position the speech bubble at the bottom right */
+    top: 75%; /* Adjust as needed */
+    right: 10%; /* Adjust as needed */
+}
+
+.electric {
+    position: absolute;
+    font-family: "ccmeanwhile", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    width: 250px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+
+.electric-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 24px solid #fff;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 230px;
+    bottom: -24px;
+}
+
+.electric-bottom-left {
+    /* Position the electric bubble at the bottom left */
+    top: 4%; /* Adjust as needed */
+    left: 3%; /* Adjust as needed */
 }
 
 /*slug-line */
 
 .slug-line {
     font-family: 'Bangers';
-    text-align: center;  /* Centers the text horizontally */
-    color: #60C7EA;  /* Sets the text color (you can choose your preferred color) */
-    font-size: 1.8rem;  /* Adjust font size as per your preference */
-    margin-top: 20px;  /* Adds some space between the image and the text */
-    font-family: 'Bangers' cursive;  /* You can choose your preferred font from the ones you've loaded */
+    text-align: center;
+    color: #60C7EA;
+    font-size: 3vw;
+    margin-top: 20px;
 }

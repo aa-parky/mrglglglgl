@@ -8,7 +8,7 @@ body, html {
     position: relative;
     width: 100%; /* Make the image container 100% width */
     max-width: 600px; /* Set a max-width to the image container */
-    margin: 200px auto 0; /* Center the image horizontally */
+    margin: 30px auto 0; /* Center the image horizontally */
 }
 
 .image-container img {
@@ -20,22 +20,75 @@ body, html {
 
 /* speech bubbles*/
 
-blockquote.speech {
-    background: url(../data/Speech03.png);
-    background-repeat: no-repeat !important;
-    background-size: contain;
-    width: 348px;
-    height: 257px;
-    z-index: 1;
+.speech {
+    position: absolute;
+    font-family: "ccmeanwhile", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
-blockquote.electric {
-    background: url(../data/Electric03.png);
-    background-repeat: no-repeat !important;
-    background-size: contain;
-    width: 393px;
-    height: 341px;
-    z-index: 1;
+.speech-bottom-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 24px solid #fff;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 290px;
+    bottom: -24px;
+}
+
+.speech-bottom-right {
+    /* Position the speech bubble at the bottom right */
+    top: 75%; /* Adjust as needed */
+    right: 10%; /* Adjust as needed */
+}
+
+.electric {
+    position: absolute;
+    font-family: "ccmeanwhile", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    width: 250px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    opacity: 0.8;
+}
+
+.electric-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 24px solid #fff;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 230px;
+    bottom: -24px;
+}
+
+.electric-bottom-left {
+    /* Position the electric bubble at the bottom left */
+    top: 4%; /* Adjust as needed */
+    left: 3%; /* Adjust as needed */
 }
 
 /*slug-line */
@@ -45,4 +98,5 @@ blockquote.electric {
     text-align: center;
     color: #60C7EA;
     font-size: 3vw;
+    margin-top: 20px;
 }

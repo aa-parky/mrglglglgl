@@ -15,26 +15,17 @@ body, html {
     width: 100%;
     height: auto; /* Automatically adjust the height to maintain aspect ratio */
     display: block;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
 /* speech bubbles*/
 
 blockquote.speech {
-    background: url(../data/Speech03.png);
-    background-repeat: no-repeat !important;
-    background-size: contain;
-    width: 348px;
-    height: 257px;
-    z-index: 1;
+    
 }
 
 blockquote.electric {
-    background: url(../data/Electric03.png);
-    background-repeat: no-repeat !important;
-    background-size: contain;
-    width: 393px;
-    height: 341px;
-    z-index: 1;
+    
 }
 
 /*slug-line */

@@ -9,34 +9,42 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
-    <title>Mrglglglgl.com Coming Soon!</title>
+    <title>Mrglglglgl.com Read it before you are in it!</title>
 
    <!-- Importing the Google Font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
    <!-- My stylesheet -->
-   <link rel="stylesheet" href="css/landing.css">
+   <link rel="stylesheet" href="css/test.css">
 </head>
 
 <body>
+    
+    <!-- Hero Image -->
     <div class="image-container">
-        <blockquote class="electric bubble">Mrglglglgl<br> Lumps!</blockquote>
-        <blockquote class="speech bubble">Sheep?</blockquote>
         
-        <img src="img/landing00.png" alt="Centered Image">
+        <!-- Bubbles -->
+        <?php include 'scripts/parse_master_alliance.php'; ?>
+        <div class="electric electric-bottom-left">
+            <?php echo $greeting; ?>!
+        </div>
+        
+        <div class="speech speech-bottom-right">
+            <?php echo $lastWords; ?> 
+        </div>
+        
+        <img src="img/landing00.png" alt="The Mr. Mrglglglgl">
+    
     </div>
     
+    <!-- Slug-Line -->
+    <?php include 'scripts/slug-line.php'; ?>
     <div class="slug-line">
-        <?php
-        $lines = file('data/slug_lines.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        if ($lines && count($lines) > 0) {
-            echo '' . $lines[array_rand($lines)] . '';
-        } else {
-            echo '"Where Epic Fails Meet Murloc Wails!"';  // default text in case the file is empty or there's an error reading it
-        }
-        ?>
+        <?php echo generateSlugLine(); ?>
     </div>
-
+    
 </body>
+
 </html>

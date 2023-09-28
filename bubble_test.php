@@ -15,23 +15,28 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
    <!-- My stylesheet -->
    <link rel="stylesheet" href="css/test.css">
 </head>
 
-    <!-- Bubbles -->
-    <?php include 'scripts/parse_master_alliance.php'; ?>
-    <blockquote class="electric">
-        <?php echo $greeting; ?> !
-    </blockquote>
+<body>
     
-    <blockquote class="speech">
-        <?php echo $lastWords; ?>
-    </blockquote>
-
     <!-- Hero Image -->
     <div class="image-container">
+        
+        <!-- Bubbles -->
+        <?php include 'scripts/parse_master_alliance.php'; ?>
+        <div class="electric electric-bottom-left">
+            <?php echo $greeting; ?>!
+        </div>
+        
+        <div class="speech speech-bottom-right">
+            <?php echo $lastWords; ?> 
+        </div>
+        
         <img src="img/landing00.png" alt="The Mr. Mrglglglgl">
+    
     </div>
     
     <!-- Slug-Line -->
@@ -39,6 +44,7 @@
     <div class="slug-line">
         <?php echo generateSlugLine(); ?>
     </div>
-
+    
 </body>
+
 </html>
