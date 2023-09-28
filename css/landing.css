@@ -26,14 +26,14 @@ font-family: 'Bangers';
 }
 
 blockquote.speech {
-background: url(../data/speech-bubble.svg); 
+background: url(../data/IL-Speech.svg); 
 width: 25%;
 padding-top: 6%;
 padding-bottom: 20%;
 }
 
 blockquote.whisper {
-background: url(../data/whisper.svg); /* whisper.svg */
+background: url(../data/IL-Whisper.svg); /* whisper.svg */
 width: 25%;
 font-size: clamp(1rem, 1.5rem, 2vw);
 color: #ccc;
@@ -42,7 +42,7 @@ padding: 6% 5% 15%;
 }
 
 blockquote.electric {
-background: url(../data/electric.svg); /* electric.svg*/
+background: url(../data/IL-Electric.svg); /* electric.svg*/
 width: 25%;
 font-size: clamp(1rem, 1.5rem, 2vw);
 font-style: italic;

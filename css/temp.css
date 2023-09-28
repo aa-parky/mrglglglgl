@@ -1,0 +1,47 @@
+body, html {
+    background-color: #0b5066;
+}
+
+/* Image positioning */
+
+.image-container {
+    position: relative;
+    width: 100%; /* Make the image container 100% width */
+    max-width: 600px; /* Set a max-width to the image container */
+    margin: 200px auto 0; /* Center the image horizontally */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    display: block;
+}
+
+/* speech bubbles*/
+
+blockquote.speech {
+    background: url(../data/Speech03.png);
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: 348px;
+    height: 257px;
+    z-index: 1;
+}
+
+blockquote.electric {
+    background: url(../data/Electric03.png);
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: 393px;
+    height: 341px;
+    z-index: 1;
+}
+
+/*slug-line */
+
+.slug-line {
+    font-family: 'Bangers';
+    text-align: center;
+    color: #60C7EA;
+    font-size: 3vw;
+}
