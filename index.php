@@ -17,7 +17,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
    <!-- My stylesheet -->
-   <link rel="stylesheet" href="css/test.css">
+   <link rel="stylesheet" href="css/landing.css">
 </head>
 
 <body>
