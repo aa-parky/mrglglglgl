@@ -15,7 +15,6 @@ body, html {
     width: 100%;
     height: auto; /* Automatically adjust the height to maintain aspect ratio */
     display: block;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
 /* speech bubbles*/
@@ -33,7 +32,6 @@ body, html {
     padding: 24px;
     text-align: center;
     color: #000;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
 .speech-bottom-right:before {
