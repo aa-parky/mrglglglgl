@@ -52,7 +52,7 @@ body, html {
 
 .speech-bottom-right {
     /* Position the speech bubble at the bottom right */
-    top: 75%; /* Adjust as needed */
+    top: 65%; /* Adjust as needed */
     right: 10%; /* Adjust as needed */
 }
 
@@ -100,7 +100,8 @@ body, html {
     text-align: center;
     color: #60C7EA;
     font-size: 3vw;
-    margin-top: 20px;
+    margin-top: 10px;
+    width: 100%;
 }
 
 /* Save Button */

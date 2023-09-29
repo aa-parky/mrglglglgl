@@ -16,6 +16,8 @@
 
     <!-- save button script -->
     <script src="scripts/save-button.js"></script>
+    <!-- refresh button script -->
+    <script src="scripts/refresh-button.js"></script>
 
 <!-- Importing the Google Font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,31 +44,23 @@
         </div>
         
         <img src="img/landing00.png" alt="The Mr. Mrglglglgl">
-    
-    </div>
-    
-    <!-- Slug-Line -->
-    <?php include 'scripts/slug-line.php'; ?>
-    <div class="slug-line">
+
+         <!-- Slug-Line -->
+        <?php include 'scripts/slug-line.php'; ?>
+        <div class="slug-line">
         <?php echo generateSlugLine(); ?>
+        </div>
+
     </div>
+    
     
 </body>
 
 <div class="button-container">
-
-<!-- Add this button anywhere within your <body> tag -->
-<button id="saveAsPngButton" class="save-button">Save as PNG</button>
-<button id="refreshButton" onclick="refreshPage()">Refresh</button>
-    </div>
+    <!-- Add this button anywhere within your <body> tag -->
+        <button id="saveAsPngButton" class="save-button">Save as PNG</button>
+        <button id="refreshButton" onclick="refreshPage()">Refresh</button>
 
 </div>
-
-<script>
-        // JavaScript function to refresh the page
-        function refreshPage() {
-            location.reload();
-        }
-    </script>
 
 </html>
