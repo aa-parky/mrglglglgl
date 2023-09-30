@@ -1,228 +1,44 @@
-body, html {
-    
-    background-color: #0b5066;
-}
-
-/* Image positioning */
-
-.image-container {
-    position: relative;
-    width: 100%; /* Make the image container 100% width */
-    max-width: 600px; /* Set a max-width to the image container */
-    margin: 30px auto 0; /* Center the image horizontally */
-}
-
-.image-container img {
-    width: 100%;
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    display: block;
-}
-
-/* Headline */
-
-.headline {
-    font-family: "ccmeanwhile", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-    text-align: center;
-    color: #e6d702;
-    font-size: 3vw;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 100%;
-}
-
-.sub-headline{
-    font-family: "ccmeanwhile", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    color: #e6d702;
-    font-size: 1vw;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 100%;
-}
-
-
-/* speech bubbles*/
-
-.speech {
-    position: absolute;
-    font-family: "ccmeanwhile", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 24px;
-    width: 300px;
-    background: #f6fdcc;
-    border-radius: 40px;
-    padding: 24px;
-    text-align: center;
-    color: #000;
-    opacity: 0.8;
-}
-
-.speech-bottom-right:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-right: 24px solid #f6fdcc;
-    border-left: 12px solid transparent;
-    border-top: 12px solid #f6fdcc;
-    border-bottom: 20px solid transparent;
-    left: 282px;
-    bottom: -30px;
-    opacity: 0.8;
-}
-
-.speech-bottom-right {
-    /* Position the speech bubble at the bottom right */
-    top: 65%; /* Adjust as needed */
-    right: 10%; /* Adjust as needed */
-}
-
-.electric {
-    position: absolute;
-    font-family: "ccmeanwhile", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 18px;
-    line-height: 24px;
-    width: 250px;
-    background: #f6fdcc;
-    border-radius: 40px;
-    padding: 24px;
-    text-align: center;
-    color: #000;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    opacity: 0.8;
-}
-
-.electric-bottom-left:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-right: 24px solid #f6fdcc;
-    border-left: 12px solid transparent;
-    border-top: 12px solid #f6fdcc;
-    border-bottom: 20px solid transparent;
-    left: 230px;
-    bottom: -24px;
-    opacity: 0.8;
-}
-
-.electric-bottom-left {
-    /* Position the electric bubble at the bottom left */
-    top: 21%; /* Adjust as needed */
-    left: 0.8%; /* Adjust as needed */
-}
-
-/*slug-line */
-
-.slug-line {
-    font-family: "ccmeanwhile", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    text-align: center;
-    color: #60C7EA;
-    font-size: 2vw;
-    margin-top: 10px;
-    width: 100%;
-}
-
-/* Set a maximum font size for very large screens */
-@media (min-width: 1200px) {
-    .slug-line {
-        font-size: 24px; /* or whatever maximum size you feel is appropriate */
-    }
-}
-
-/* Set a minimum font size for very small screens */
-@media (max-width: 480px) {
-    .slug-line {
-        font-size: 12px; /* or whatever minimum size you feel is appropriate */
-    }
-    .sub-headline{
-        font-size: 12px; /* or whatever minimum size you feel is appropriate */
-    }
-}
-
-/* Save Button */
-
-.button-container {
-    text-align: center; /* Center-align the content horizontally */
-    margin-top: 20px; /* Adjust the top margin as needed */
-}
-
-.save-button {
-    align-items: center;
-    background: #3498db;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+* {
     box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.85);
-    cursor: pointer;
-    display: inline-flex;
-    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    width: auto;
   }
   
-  .save-button:hover {
-    background: #3cb0fd;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
+  body {
+    font-family: Arial, Helvetica, sans-serif;
   }
-
-  button#refreshButton {
-    align-items: center;
-    background: #3498db;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.85);
-    cursor: pointer;
-    display: inline-flex;
-    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    width: auto;
-}
-
-button#refreshButton:hover {
-    background: #3cb0fd;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }

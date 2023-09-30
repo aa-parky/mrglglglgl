@@ -31,47 +31,7 @@
 </head>
 
 <body>
-    
-    <!-- Container for the main image content -->
-    <div class="image-container" id="captureContent">
 
-        <!-- Main headline for the webpage -->
-        <div class="headline">
-            Suddenly...
-        </div>
-
-        <!-- Sub-headline generated using a PHP script -->
-        <?php include 'scripts/sub-headline.php'; ?>
-        <div class="sub-headline">
-        <?php echo generateSubHeadline(); ?>
-        </div>
-
-        <!-- Speech bubbles with content fetched using a PHP script -->
-        <?php include 'scripts/parse_master_alliance.php'; ?>
-        <div class="electric electric-bottom-left">
-            <?php echo $greeting; ?>!
-        </div>
-        
-        <div class="speech speech-bottom-right">
-            <?php echo $lastWords; ?> 
-        </div>
-        
-        <!-- Main hero image for the site -->
-        <img src="img/landing00.png" alt="The Mr. Mrglglglgl">
-
-        <!-- Slug-line generated using a PHP script -->
-        <?php include 'scripts/slug-line.php'; ?>
-        <div class="slug-line">
-        <?php echo generateSlugLine(); ?>
-        </div>
-
-    </div>
-
-    <!-- Container for the "save" and "refresh" buttons -->
-    <div class="button-container">
-        <button id="saveAsPngButton" class="save-button">Save as PNG</button>
-        <button id="refreshButton" onclick="refreshPage()">Refresh</button>
-    </div>
 
 </body>
 </html>
