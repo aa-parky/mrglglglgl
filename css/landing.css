@@ -18,6 +18,33 @@ body, html {
     display: block;
 }
 
+/* Headline */
+
+.headline {
+    font-family: "ccmeanwhile", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    color: #e6d702;
+    font-size: 3vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.sub-headline{
+    font-family: "ccmeanwhile", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: #e6d702;
+    font-size: 1vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+
 /* speech bubbles*/
 
 .speech {
@@ -89,8 +116,8 @@ body, html {
 
 .electric-bottom-left {
     /* Position the electric bubble at the bottom left */
-    top: 4%; /* Adjust as needed */
-    left: 3%; /* Adjust as needed */
+    top: 21%; /* Adjust as needed */
+    left: 0.8%; /* Adjust as needed */
 }
 
 /*slug-line */

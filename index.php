@@ -32,7 +32,17 @@
     
     <!-- Hero Image -->
     <div class="image-container" id="captureContent">
-        
+
+        <!-- Headline -->
+        <div class="headline">
+            Suddenly...
+        </div>
+
+        <!-- Sub Headline -->
+        <?php include 'scripts/sub-headline.php'; ?>
+        <div class="sub-headline">
+        <?php echo generateSubHeadline(); ?>
+        </div>
         <!-- Bubbles -->
         <?php include 'scripts/parse_master_alliance.php'; ?>
         <div class="electric electric-bottom-left">
