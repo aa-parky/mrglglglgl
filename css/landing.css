@@ -101,9 +101,23 @@ body, html {
     font-style: italic;
     text-align: center;
     color: #60C7EA;
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin-top: 10px;
     width: 100%;
+}
+
+/* Set a maximum font size for very large screens */
+@media (min-width: 1200px) {
+    .slug-line {
+        font-size: 24px; /* or whatever maximum size you feel is appropriate */
+    }
+}
+
+/* Set a minimum font size for very small screens */
+@media (max-width: 480px) {
+    .slug-line {
+        font-size: 12px; /* or whatever minimum size you feel is appropriate */
+    }
 }
 
 /* Save Button */
