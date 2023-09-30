@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <!-- Adobe fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
 
     <!-- Link to the site's main stylesheet -->
     <link rel="stylesheet" href="css/test.css">
@@ -32,6 +33,54 @@
 
 <body>
 
+<div class="parent">
+
+<div class="div1"> 
+    <!-- Main headline for the webpage -->
+    <div class="headline ccmeanwhile">
+        Suddenly...
+    </div>
+</div>
+
+<div class="div2"> 
+    <!-- Sub-headline generated using a PHP script -->
+    <?php include 'scripts/sub-headline.php'; ?>
+        <div class="sub-headline ccmeanwhile">
+            <?php echo generateSubHeadline(); ?>
+        </div>
+</div>
+
+<div class="div3"> 
+    <!-- Speech bubbles with content fetched using a PHP script -->
+    <?php include 'scripts/parse_master_alliance.php'; ?>
+        <div class="player-name mmrbb">
+            <?php echo $greeting; ?>!
+        </div>
+</div>
+
+<!-- Hero Image-->
+<div class="div4"> HERO IMAGE</div>
+
+<div class="div5"> 
+    <div class="last-words mmrbb">
+        <?php echo $lastWords; ?> 
+    </div>
+</div>
+
+<div class="div6"> 
+    <!-- Slug-line generated using a PHP script -->
+    <?php include 'scripts/slug-line.php'; ?>
+        <div class="slug-line ccmeanwhile">
+            <?php echo generateSlugLine(); ?>
+        </div>
+</div>
+
+<div class="div7"> </div>
+<div class="div8"> </div>
+<div class="div9"> </div>
+
+<div class="div10">Mrglglglgl by aa.parky | &copy; Copyright aa.parky | Contact | <a href="https://github.com/aa-parky/wow_addons">Github</a></div>
+</div>
 
 </body>
 </html>
