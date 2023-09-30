@@ -145,6 +145,9 @@ body, html {
     .slug-line {
         font-size: 12px; /* or whatever minimum size you feel is appropriate */
     }
+    .sub-headline{
+        font-size: 12px; /* or whatever minimum size you feel is appropriate */
+    }
 }
 
 /* Save Button */
