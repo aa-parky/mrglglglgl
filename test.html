@@ -4,55 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Prevent caching by browsers -->
+<!-- Prevent caching -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
-    <!-- Setting the title for the page -->
     <title>Mrglglglgl.com Read it before you are in it!</title>
     
-    <!-- Importing html2canvas library for capturing screenshots -->
+<!-- importing html2canvas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
 
-    <!-- Importing scripts for save and refresh button functionality -->
+    <!-- save button script -->
     <script src="scripts/save-button.js"></script>
+    <!-- refresh button script -->
     <script src="scripts/refresh-button.js"></script>
 
-    <!-- Importing Google Fonts for styling -->
+<!-- Importing the Google Font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
-
-    <!-- Linking to the custom stylesheet for the page -->
+<!-- My stylesheet -->
    <link rel="stylesheet" href="css/landing.css">
 </head>
 
 <body>
     
-    <!-- Container for the hero image and associated content -->
+    <!-- Hero Image -->
     <div class="image-container" id="captureContent">
         
         <!-- Bubbles -->
-        <!-- Including PHP script for parsing master alliance data -->
         <?php include 'scripts/parse_master_alliance.php'; ?>
-        
-        <!-- Displaying greeting message -->
         <div class="electric electric-bottom-left">
             <?php echo $greeting; ?>!
         </div>
         
-        <!-- Displaying last words message -->
         <div class="speech speech-bottom-right">
             <?php echo $lastWords; ?> 
         </div>
         
-        <!-- Displaying the main image -->
         <img src="img/landing00.png" alt="The Mr. Mrglglglgl">
 
-        <!-- Slug-Line -->
-        <!-- Including PHP script to generate a slug line -->
+         <!-- Slug-Line -->
         <?php include 'scripts/slug-line.php'; ?>
         <div class="slug-line">
         <?php echo generateSlugLine(); ?>
@@ -60,12 +53,14 @@
 
     </div>
     
+    
 </body>
 
-<!-- Container for buttons (Save as PNG and Refresh) -->
 <div class="button-container">
-    <button id="saveAsPngButton" class="save-button">Save as PNG</button>
-    <button id="refreshButton" onclick="refreshPage()">Refresh</button>
+    <!-- Add this button anywhere within your <body> tag -->
+        <button id="saveAsPngButton" class="save-button">Save as PNG</button>
+        <button id="refreshButton" onclick="refreshPage()">Refresh</button>
+
 </div>
 
 </html>
