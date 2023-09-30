@@ -26,7 +26,6 @@
     <!-- Adobe fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
     <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
-
     <!-- Link to the site's main stylesheet -->
     <link rel="stylesheet" href="css/test.css">
 </head>
@@ -59,7 +58,11 @@
 </div>
 
 <!-- Hero Image-->
-<div class="div4"> HERO IMAGE</div>
+<div class="div4"> 
+    <div class="hero">
+        <img src="img/m01.png" alt="MrGlglglgl" />
+    </div>
+</div>
 
 <div class="div5"> 
     <div class="last-words mmrbb">
