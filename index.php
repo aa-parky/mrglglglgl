@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
 
     <!-- Link to the site's main stylesheet -->
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/landing.css">
 </head>
 
 <body>
