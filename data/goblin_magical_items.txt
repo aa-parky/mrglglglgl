@@ -1,0 +1,40 @@
+Fleeting Fancy Footwear: Shoes that seem to make you run faster... backwards.
+Purse of Perpetual Pennies: An ever-filling pouch, but only with the lowest denomination of coin.
+Lingering Lucklocket: A necklace said to bring luck, but all it attracts are persistent door-to-door salesgoblins.
+Bewildering Biscuit Box: A container full of cookies that always taste like something you just can't place.
+Echoing Elixirth: A potion that, when drunk, makes you repeat the last word of every sentence. Sentence.
+Vanishing Velvet Vest: A jacket that's so stylish, it occasionally disappears to attend other parties without you.
+Boots of Bumbling Bounces: These will make you jump, but never in the direction you intend.
+Goggles of Gratuitous Greetings: Forces the wearer to wave hello at every NPC they pass.
+Doodad of Dubious Deals: A mysterious trinket that's constantly trying to sell itself to other players.
+Helm of Hasty Hairdos: Randomly restyles your hair every time you take damage.
+Pocketwatch of Peculiar Pacing: Tells the time, but always in a different time zone.
+Girdle of Giggling Guts: Causes the wearer to chuckle uncontrollably when hit.
+Earring of Endless Echo: Repeats everything you say, three seconds after you say it.
+Robe of Random Rainbows: A beautiful robe that sporadically shoots rainbows in all directions.
+Whisker-Woven Wallet: A coin purse made of cat whiskers that occasionally purrs when opened.
+Candle of Curious Choruses: Sings instead of illuminates, but only goblin lullabies.
+Ring of Ridiculous Riddles: Whispers perplexing riddles to the wearer, but never the answers.
+Cloak of Continuous Coughing: A cloak that coughs loudly, ruining every stealth attempt.
+Belt of Befuddling Bells: Jingles a tune but is always slightly out of key.
+Muffler of Muted Mumbling: When equipped, all of your character's vocal emotes sound like incoherent mumbling.
+Pendant of Puzzling Puns: Leaves the wearer making puns without realizing it.
+Staff of Startling Serenades: Casts spells with a loud, off-tune song.
+Tunic of Ticklish Textures: Causes sporadic fits of giggles when worn.
+Slippers of Slippery Slopes: Makes even the flattest terrain feel like you're walking downhill.
+Chalice of Chuckling Contents: Every sip from this cup is accompanied by a light-hearted giggle.
+Bracers of Brazen Braying: These armguards emit donkey sounds whenever you swing your weapon.
+Gloves of Glib Greetings: Handshakes last three times longer when wearing these.
+Scepter of Silly Strutting: Your walk animation becomes an exaggerated strut with this equipped.
+Brooch of Bumbling Bubbles: Creates harmless, floating bubbles around the user, popping on contact.
+Pants of Peculiar Prancing: With every step, you dance a little jig.
+Lantern of Ludicrous Limericks: Lights up dark places while reciting off-color limericks.
+Buckler of Boisterous Boos: Any blocked attack results in the shield loudly booing the attacker.
+Kettle of Kitschy Kitten Calls: Brews tea while constantly meowing.
+Dagger of Droll Dramatics: Every successful strike is accompanied by over-the-top theater effects.
+Amulet of Awkward Applause: Breaks out into clapping at inappropriate moments.
+Wand of Waggling Whiskers: This magical wand sprouts cat whiskers that constantly wiggle.
+Hat of Hilarious Hiccups: Induces a case of the hiccups in anyone who sees it.
+Flute of Flippant Frogs: Every note summons a tiny frog that croaks a tune.
+Sandals of Sassy Snap-backs: These shoes have a retort for every comment.
+Bow of Bizarre Balloons
