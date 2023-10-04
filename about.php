@@ -103,6 +103,10 @@
 
 					<p>I am in no way affiliated with Blizzard or the amazing addon authors of <a href="https://github.com/aaronma37/Deathlog">Deathlog</a>, or <a href="https://classichardcore.com/addons/"> The "Hardcore Addon" </a> which, I believe is where Deathlog got its start. I use these addons in game to collect my data and then with some Goblin magic python and php into this site!</p>
 
+					<p><span class="about span">Jimmy</span> is here for community service, no permission has been sought from his P.O. or Vince Gilligan, Peter Gould or AMC. <a href="https://en.wikipedia.org/wiki/Better_Call_Saul">Better Call Saul</a>. </p>
+
+					<p>All art on the site is mine and has been generated using <a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI and <a href="https://www.midjourney.com/">Midjourney</a>, all with some Photoshop post generation tweaking.</p>
+
 					<p>My github repo can be found <a href="https://github.com/aa-parky">HERE.</a></p>
 
 					<p>I am not a website designer or professional software engineer, just an enthusiast. Please feel free to contact me if you need anything regarding the site, or if you have any suggestions!</p>
