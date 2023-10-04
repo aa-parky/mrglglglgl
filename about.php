@@ -99,7 +99,7 @@
 				</figcaption>
 
 				<div class="about">
-					<p>This is all a tongue in cheek fan site revolving around the Classic World of Warcraft Official Hardcore server Stitches.</p>
+					<p>This is all a tongue in cheek fan site revolving around the Classic World of Warcraft Official Hardcore server <span class="about span">Stitches</span>.</p>
 
 					<p>I am in no way affiliated with Blizzard or the amazing addon authors of <a href="https://github.com/aaronma37/Deathlog">Deathlog</a>, or <a href="https://classichardcore.com/addons/"> The "Hardcore Addon" </a> which, I believe is where Deathlog got its start. I use these addons in game to collect my data and then with some Goblin magic python and php into this site!</p>
 
