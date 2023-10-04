@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +26,8 @@
 	<?php include 'scripts/slug-line.php'; ?>
 	<!-- Date & Time -->
 	<?php include 'scripts/utc.php'; ?>
+	<!-- BTC Auctions -->
+	<?php include 'scripts/btc.php'; ?>
 
 	<!-- Scripts to handle the "save" and "refresh" button functionalities -->
 	<script src="scripts/save-button.js"></script>
@@ -34,6 +37,7 @@
 	<link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
 	<!-- Link to the site's main stylesheet -->
 	<link rel="stylesheet" href="css/comic.css">
+	<link rel="stylesheet" href="css/speech.css">
 </head>
 
 <body>
@@ -65,7 +69,7 @@
 
 		<!-- Top Panel Horizontal Wrapper -->
 		<div class="topPanelsContainer">
-		<section class="topPanel">
+			<section class="topPanel">
 				<a href="https://mrglglglgl.com">Home</a>
 			</section>
 
@@ -136,7 +140,9 @@
 						Cadaverclutch
 						<span class="panel3_topbox span">Coffin Co.</span>
 					</div>
-					<div class="panel3_content">Coming Soon!</div>
+					<div class="panel3_content">Coming Soon!
+					</div>
+
 				</figure>
 			</section>
 
@@ -155,7 +161,17 @@
 					<div class="panel4_topbox">
 						Goldsnatch Graveyard Auctions
 					</div>
-					<div class="panel4_content">Coming Soon!</div>
+					<div class="panel4_content">
+
+						<span class="panel4_content span"><?php echo $selectedPlayer['class_id']; ?></span> Gear
+					</div>
+					<img src="img/bcs01.png" alt="Saul Goodman" style="max-width: 180px;">
+
+					<div speech-bubble pright atop style="--bbColor:#fdbb3c">
+						<div class="title"><?php echo $name; ?>'s Loot!</div>
+						<?php echo generateBTCauctions(); ?>
+					</div>
+
 				</figure>
 			</section>
 		</div>
@@ -163,7 +179,7 @@
 
 		<!-- Bottom Panel Horizontal Wrapper -->
 		<div class="topPanelsContainer">
-		<section class="topPanel">
+			<section class="topPanel">
 				<a href="https://mrglglglgl.com">Home</a>
 			</section>
 
