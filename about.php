@@ -149,8 +149,8 @@
 
 		<!-- Bottom Panel Horizontal Wrapper -->
 		<div class="topPanelsContainer">
-			<section class="topPanel">
-				<a href="#">Home</a>
+		<section class="topPanel">
+				<a href="https://mrglglglgl.com">Home</a>
 			</section>
 
 			<section class="topPanel">
@@ -158,11 +158,11 @@
 			</section>
 
 			<section class="topPanel">
-				<a href="#">About</a>
+				<a href="https://mrglglglgl.com/about.php">About</a>
 			</section>
 
 			<section class="topPanel">
-				<a href="#">Contact</a>
+				<a href="https://mrglglglgl.com/about.php">Contact</a>
 			</section>
 		</div>
 
