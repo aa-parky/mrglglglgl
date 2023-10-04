@@ -90,7 +90,7 @@
 
 		<!-- Panel 1 -->
 		<section>
-			
+
 			<figure class="comicPanel panel1" style="width: 50%;">
 				<figcaption class="comicCaption comicCaptionTop">
 					<div class="sub-headline">
@@ -124,15 +124,16 @@
 
 				<div style="width: 400px; height: 400px;">
 
-					<form name="contactForm" id="contactForm" method="post" action="http://www.mycontactform.com/sendform/sendform.php">
+					<!-- Begin myContactForm.com Form HTML -->
+					<form name="contactForm" id="contactForm" method="post" action="https://www.mycontactform.com/sendform/sendform.php">
 						<label for="email">E-mail Address: *</label>
-						<input name="email" type="email" id="email" size="20" maxlength="100" required="required" />
+						<input name="email" type="email" id="email" required="required" />
 
 						<label for="q1">Your Name: *</label>
-						<input name="q1" id="q1" type="text" value="" size="30" maxlength="150" />
+						<input name="q1" id="q1" type="text" />
 
 						<label for="q2">Message: *</label>
-						<textarea name="q2" id="q2" cols="40" rows="4"></textarea>
+						<textarea name="q2" id="q2"></textarea>
 
 						<input name="user" type="hidden" id="user" value="aaparky" />
 						<input name="formid" type="hidden" id="formid" value="463382" />
@@ -140,8 +141,9 @@
 						<input name="submit" type="submit" value="Submit" />
 						<input name="reset" type="reset" value="Reset" />
 
-						<a href="http://www.mycontactform.com" target="_blank" title="Link to myContactForm.com" style="font-size: x-small;">Free Contact Form</a>
 					</form>
+					<!-- End myContactForm.com Form HTML -->
+
 				</div>
 			</figure>
 		</section>
@@ -149,7 +151,7 @@
 
 		<!-- Bottom Panel Horizontal Wrapper -->
 		<div class="topPanelsContainer">
-		<section class="topPanel">
+			<section class="topPanel">
 				<a href="https://mrglglglgl.com">Home</a>
 			</section>
 
@@ -191,6 +193,9 @@
 
 	</div>
 	<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="aaparky" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting! Every penny helps." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
+
 </body>
 
 </html>
