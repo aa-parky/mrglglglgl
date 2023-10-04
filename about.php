@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +49,7 @@
 				</div>
 
 				<div class="banner_centre">
-					Heroic Deaths & Epic Fails
+					Heroic Deaths &#38; Epic Fails
 				</div>
 
 				<div class="banner_mrgl">
@@ -74,91 +75,76 @@
 			</section>
 
 			<section class="topPanel">
-				<a href="#">About</a>
+				<a href="https://mrglglglgl.com/about.php">About</a>
 			</section>
 
 			<section class="topPanel">
-				<a href="#">Contact</a>
+				<a href="https://mrglglglgl.com/about.php">Contact</a>
 			</section>
 		</div>
 
 		<!-- Main headline for the webpage -->
 		<div class="headline">
-			Suddenly...
+			About &#38; Contact...
 		</div>
 
 		<!-- Panel 1 -->
 		<section>
+			
 			<figure class="comicPanel panel1" style="width: 50%;">
-				<img src="../img/MrGl.png" alt="Mrglglglgl" style="max-width: 100%; max-height: 100%;">
 				<figcaption class="comicCaption comicCaptionTop">
-
 					<div class="sub-headline">
-						<?php echo generateSubHeadline(); ?>
+						About
 					</div>
-
 				</figcaption>
 
-				<div class="speech_left">
+				<div class="about">
+					<p>This is all a tongue in cheek fan site revolving around the Classic World of Warcraft Official Hardcore server Stitches.</p>
 
-					<div class="mrgl-before">mrglglglgl...</div>
-					<div class="player_name">
-						<span><?php echo $name; ?>!</span>
-					</div>
-					<div class="mrgl-after">...mrglglglgl &#42;</div>
+					<p>I am in no way affiliated with Blizzard or the amazing addon authors of <a href="https://github.com/aaronma37/Deathlog">Deathlog</a>, or <a href="https://classichardcore.com/addons/"> The "Hardcore Addon" </a> which, I believe is where Deathlog got its start. I use these addons in game to collect my data and then with some Goblin magic python and php into this site!</p>
+
+					<p>My github repo can be found <a href="https://github.com/aa-parky">HERE.</a></p>
+
+					<p>I am not a website designer or professional software engineer, just an enthusiast. Please feel free to contact me if you need anything regarding the site, or if you have any suggestions!</p>
+
 				</div>
-
-				<div class="speech_right">
-					<div class="last_words">
-						<?php echo $lastWords; ?>
-					</div>
-				</div>
-
-				<div class="comicCaption comicCaptionBottom">
-					<div class="sub-headline">
-						<?php echo generateMurlocEndings(); ?>
-					</div>
-				</div>
-
-				<div class="copy span">
-					&copy; 2023 aa.parky
-				</div>
-
 			</figure>
+
 		</section>
 
-		<!-- Middle Comic Panels Wrapper -->
-		<div class="middleComicPanels">
-			<!-- Panel 3 Orc-->
-			<section>
-				<figure class="comicPanel panel3">
-					<div class="panel3_topbox">
-						Cadaverclutch
-						<span class="panel3_topbox span">Coffin Co.</span>
+		<!-- Panel 2 -->
+		<section>
+			<figure class="comicPanel panel2" style="width: 100%;">
+
+				<figcaption class="comicCaption comicCaptionTop">
+					<div class="sub-headline">
+						Contact
 					</div>
-					<div class="panel3_content">Coming Soon!</div>
-				</figure>
-			</section>
+				</figcaption>
 
+				<div style="width: 400px; height: 400px;">
 
-			<!-- Panel 2 Obituary-->
-			<section>
-				<figure class="comicPanel panel2">
-					<div class="slug-line"><?php echo generateSlugLine(); ?></div>
-					<div class="player_obit"><?php echo $player_obit; ?></div>
-				</figure>
-			</section>
+					<form name="contactForm" id="contactForm" method="post" action="http://www.mycontactform.com/sendform/sendform.php">
+						<label for="email">E-mail Address: *</label>
+						<input name="email" type="email" id="email" size="20" maxlength="100" required="required" />
 
-			<!-- Panel 4 Goblin-->
-			<section>
-				<figure class="comicPanel panel4">
-					<div class="panel4_topbox">
-						Goldsnatch Graveyard Auctions
-					</div>
-					<div class="panel4_content">Coming Soon!</div>
-				</figure>
-			</section>
-		</div>
+						<label for="q1">Your Name: *</label>
+						<input name="q1" id="q1" type="text" value="" size="30" maxlength="150" />
+
+						<label for="q2">Message: *</label>
+						<textarea name="q2" id="q2" cols="40" rows="4"></textarea>
+
+						<input name="user" type="hidden" id="user" value="aaparky" />
+						<input name="formid" type="hidden" id="formid" value="463382" />
+						<input name="subject" type="hidden" id="subject" value="Have I got news for you!" />
+						<input name="submit" type="submit" value="Submit" />
+						<input name="reset" type="reset" value="Reset" />
+
+						<a href="http://www.mycontactform.com" target="_blank" title="Link to myContactForm.com" style="font-size: x-small;">Free Contact Form</a>
+					</form>
+				</div>
+			</figure>
+		</section>
 
 
 		<!-- Bottom Panel Horizontal Wrapper -->

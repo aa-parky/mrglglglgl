@@ -493,3 +493,79 @@
 	.btm_mrgl a:hover {
 		color: #8C0303;
 	}
+
+	.about {
+		font-family: "cc-mighty-mouth-variable", sans-serif;
+		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+		
+	}
+
+	  /* Styling for the link */
+	  .about a {
+		color: #8C0303;
+		text-decoration: none;
+	  }
+
+
+	/* Adjusted styling for the form to scale with col3 */
+#contactForm {
+	font-family: "cc-mighty-mouth-variable", sans-serif;
+	font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+	width: 80%;           
+	max-width: 80%;       
+	margin: 0;             
+	padding: 20px;
+  
+  }
+  
+  /* Styling for labels */
+  #contactForm label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #333; /* dark gray */
+  }
+  
+  /* Styling for input fields and textarea */
+  #contactForm input[type="text"],
+  #contactForm input[type="email"],
+  #contactForm textarea {
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #d0d0d0;
+	background-color: #fff;
+  }
+  
+  /* Styling for buttons */
+  #contactForm input[type="submit"],
+  #contactForm input[type="reset"] {
+	padding: 10px 20px;
+	border: none;
+	background-color: #000000;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 5px;
+  }
+  
+  /* Button hover effect */
+  #contactForm input[type="submit"]:hover,
+  #contactForm input[type="reset"]:hover {
+	background-color: #8C0303; 
+  }
+  
+  /* Styling for the required note */
+  #contactForm > span {
+	display: inline-block;
+	margin-right: 10px;
+  }
+  
+  /* Styling for the link */
+  #contactForm a {
+	color: #8C0303;
+	text-decoration: none;
+  }
+  
+  #contactForm a:hover {
+	text-decoration: underline;
+  }
