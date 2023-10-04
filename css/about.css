@@ -1,0 +1,38 @@
+body {
+  background-color: #ffecb3;
+  background-image: url(../img/mocha-grunge.png);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  font-family: "cc-mighty-mouth-variable", sans-serif;
+  font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
+  background: #ffecb3;
+  border: 3px solid #ffcc80;
+  border-radius: 5px;
+  padding: 8px;
+  min-width: 180px;
+  min-height: 300px;
+}
+
+.col1 {
+
+}
+
+.col2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.col3 {
+
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,7 @@
 	<meta http-equiv="Expires" content="0" />
 
 	<!-- Title for the webpage -->
-	<title>My Comic Book Panels</title>
+	<title>Mrmglglglgl Read it Before you are in it</title>
 
 	<!-- Importing html2canvas library to capture page content as images -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
@@ -68,7 +67,7 @@
 		<!-- Top Panel Horizontal Wrapper -->
 		<div class="topPanelsContainer">
 			<section class="topPanel">
-				<a href="#">Home</a>
+				<a href="https://mrglglglgl.com">Home</a>
 			</section>
 
 			<section class="topPanel">
