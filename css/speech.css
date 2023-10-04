@@ -1,4 +1,7 @@
-[speech-bubble], [speech-bubble] * {
+/* auction speech bubbles */
+
+[speech-bubble],
+[speech-bubble] * {
     box-sizing: border-box;
 }
 

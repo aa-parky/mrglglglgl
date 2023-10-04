@@ -32,7 +32,7 @@
 	.banner_mrgl,
 	.banner_date {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
 	}
 
 	/* Top Banner */
@@ -63,7 +63,7 @@
 
 	.banner_logo_top span {
 		position: relative;
-		font-variation-settings: 'wght'700, 'ital'1, 'BOUN'10;
+		font-variation-settings: 'wght' 700, 'ital' 1, 'BOUN' 10;
 		font-size: xx-large;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: black;
@@ -90,7 +90,7 @@
 	.banner_mrgl {
 		flex: 1;
 		color: #8C0303;
-		font-variation-settings: 'wght'700;
+		font-variation-settings: 'wght' 700;
 		font-size: x-large;
 		padding: 10px;
 	}
@@ -120,7 +120,7 @@
 	/* Headline */
 	.headline {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'1, 'BOUN'18;
+		font-variation-settings: 'wght' 700, 'ital' 1, 'BOUN' 18;
 		color: #000000;
 		text-align: left;
 		font-size: 3vw;
@@ -160,7 +160,7 @@
 
 	.panel3 {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
 		flex: 1;
 		background: #ffecb3;
 		border: 3px solid #ffcc80;
@@ -184,7 +184,7 @@
 		position: absolute;
 		top: 32px;
 		left: -2px;
-		font-variation-settings: 'wght'700, 'ital'1, 'BOUN'40;
+		font-variation-settings: 'wght' 700, 'ital' 1, 'BOUN' 40;
 		font-size: large;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: black;
@@ -193,14 +193,14 @@
 		transform: rotate(-2deg);
 		z-index: 1;
 	}
-	
+
 	.panel3_content {
 		padding-top: 30px;
 	}
 
 	.panel4 {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
 		flex: 1;
 		background: #ffecb3;
 		border: 3px solid #ffcc80;
@@ -208,14 +208,14 @@
 		padding: 8px;
 		min-width: 180px;
 		min-height: 300px;
-	
+
 		/* New Flexbox Properties */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center; 
+		justify-content: center;
 	}
-	
+
 	.panel4_topbox {
 		border: 1px solid black;
 		background-color: #000000;
@@ -226,27 +226,31 @@
 		max-width: 180px;
 		min-height: 30px;
 		max-height: 30px;
-		text-align: center; /* Ensures that the text inside this element is centered */
+		text-align: center;
+		/* Ensures that the text inside this element is centered */
 	}
-	
+
 	.panel4_content {
 		padding-top: 10px;
-		text-align: center; /* Ensures that the text inside this element is centered */
+		text-align: center;
+		/* Ensures that the text inside this element is centered */
 	}
-	
+
 	.panel4_content span {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 0, 'BOUN' 0;
 		font-size: larger;
 		color: #8C0303;
 	}
-	
+
 
 	img {
-		display: block;  /* Ensures that the image is treated as a block-level element */
-		margin: 10px auto; /* Adds top and bottom margin and centers it horizontally */
+		display: block;
+		/* Ensures that the image is treated as a block-level element */
+		margin: 10px auto;
+		/* Adds top and bottom margin and centers it horizontally */
 	}
-	
+
 
 	/* Common Comic Caption Styles */
 	.comicCaption {
@@ -257,7 +261,6 @@
 		max-width: 450px;
 		padding: 5px;
 		height: fit-content;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
 	.sub-headline {
@@ -287,11 +290,24 @@
 		padding: 14px 18px;
 		margin: 6px 8px;
 		background-color: blanchedalmond;
-		border-radius: 16px 16px 16px 0px;
 		border: 1px solid #5c5c5b;
 		opacity: 0.9;
 		z-index: 1;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
+
+	.speech_left::before {
+		content: "";
+		position: absolute;
+		top: 10px;
+		/* adjust this value as needed */
+		left: -10px;
+		/* size of the tail */
+		border-width: 10px 10px 10px 0;
+		border-style: solid;
+		border-color: transparent blanchedalmond transparent transparent;
+	}
+
 
 	.speech_right {
 		position: absolute;
@@ -302,10 +318,22 @@
 		padding: 14px 18px;
 		margin: 6px 8px;
 		background-color: blanchedalmond;
-		border-radius: 16px 16px 0px 16px;
 		border: 1px solid #5c5c5b;
 		opacity: 0.9;
 		z-index: 1;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.speech_right::before {
+		content: "";
+		position: absolute;
+		bottom: 10px;
+		/* adjust this value as needed */
+		right: -10px;
+		/* size of the tail */
+		border-width: 10px 0 10px 10px;
+		border-style: solid;
+		border-color: transparent transparent transparent blanchedalmond;
 	}
 
 	.copy {
@@ -315,26 +343,26 @@
 		left: 5px;
 		/* Adjust this value if you need more or less spacing from the left edge */
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
 		font-size: x-small;
 	}
 
 
 	.mrgl-before {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'100, 'BOUN'100;
+		font-variation-settings: 'wght' 400, 'ital' 100, 'BOUN' 100;
 		padding-bottom: 10px;
 		font-size: small;
 	}
 
 	.player_name {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'20, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 20, 'BOUN' 0;
 	}
 
 	.player_name span {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 0, 'BOUN' 0;
 		text-align: justify;
 		padding-top: 4px;
 		font-size: x-large;
@@ -342,13 +370,13 @@
 
 	.mrgl-after {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'50, 'BOUN'100;
+		font-variation-settings: 'wght' 400, 'ital' 50, 'BOUN' 100;
 		padding-top: 2px;
 	}
 
 	.last_words {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'20, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 20, 'BOUN' 0;
 	}
 
 	.slug-line {
@@ -360,7 +388,7 @@
 
 	.player_obit {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
 		max-width: 390px;
 		max-height: 200px;
 		padding: 10px;
@@ -368,35 +396,35 @@
 
 	.player_race_id {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'10, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 10, 'BOUN' 0;
 		font-size: larger;
 		color: #8C0303;
 	}
 
 	.player_class_id {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'10, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 10, 'BOUN' 0;
 		font-size: larger;
 		color: #8C0303;
 	}
 
 	.player_level {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'50, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 50, 'BOUN' 0;
 		font-size: larger;
 		color: #8C0303;
 	}
 
 	.player_name_obit {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 0, 'BOUN' 0;
 		font-size: larger;
 		color: #8C0303;
 	}
 
 	.player_obit_last {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'50, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 50, 'BOUN' 0;
 		font-size: larger;
 		color: #8C0303;
 	}
@@ -428,7 +456,7 @@
 	.btm_mrgl,
 	.btm_date {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
 	}
 
 	.btmBannerContainer {
@@ -456,7 +484,7 @@
 	.btm_logo span {
 		position: relative;
 		top: 4px;
-		font-variation-settings: 'wght'700, 'ital'1, 'BOUN'10;
+		font-variation-settings: 'wght' 700, 'ital' 1, 'BOUN' 10;
 		font-size: xx-large;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: black;
@@ -477,7 +505,7 @@
 		flex: 1;
 		background-color: blanchedalmond;
 		color: rgb(0, 0, 0);
-		font-variation-settings: 'wght'700;
+		font-variation-settings: 'wght' 700;
 		font-size: x-large;
 		text-align: left;
 		padding: 10px;
@@ -518,82 +546,83 @@
 
 	.about {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
-		
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
+
 	}
 
-	  /* Styling for the link */
-	  .about a {
+	/* Styling for the link */
+	.about a {
 		color: #8C0303;
 		text-decoration: none;
-	  }
+	}
 
-	  .about span {
+	.about span {
 		font-family: "cc-mighty-mouth-variable", sans-serif;
-		font-variation-settings: 'wght'700, 'ital'0, 'BOUN'0;
+		font-variation-settings: 'wght' 700, 'ital' 0, 'BOUN' 0;
 		color: #8C0303;
-	  }
+	}
 
 
 	/* Adjusted styling for the form to scale with col3 */
-#contactForm {
-	font-family: "cc-mighty-mouth-variable", sans-serif;
-	font-variation-settings: 'wght'400, 'ital'0, 'BOUN'0;
-	width: 80%;           
-	max-width: 80%;       
-	margin: 0;             
-	padding: 20px;
-  
-  }
-  
-  /* Styling for labels */
-  #contactForm label {
-	display: block;
-	margin-bottom: 10px;
-	font-weight: bold;
-	color: #333; /* dark gray */
-  }
-  
-  /* Styling for input fields and textarea */
-  #contactForm input[type="text"],
-  #contactForm input[type="email"],
-  #contactForm textarea {
-	width: 80%;
-	padding: 10px;
-	margin-bottom: 15px;
-	border: 1px solid #d0d0d0;
-	background-color: #fff;
-  }
-  
-  /* Styling for buttons */
-  #contactForm input[type="submit"],
-  #contactForm input[type="reset"] {
-	padding: 10px 20px;
-	border: none;
-	background-color: #000000;
-	color: #fff;
-	cursor: pointer;
-	margin-right: 5px;
-  }
-  
-  /* Button hover effect */
-  #contactForm input[type="submit"]:hover,
-  #contactForm input[type="reset"]:hover {
-	background-color: #8C0303; 
-  }
-  
-  /* Styling for the required note */
-  #contactForm > span {
-	display: inline-block;
-	margin-right: 10px;
-  }
-  
-  /* Styling for the link */
-  #contactForm a {
-	color: #8C0303;
-	text-decoration: none;
-  }
-  
-  #contactForm a:hover {
-	text-decoration: underline;
-  }
+	#contactForm {
+		font-family: "cc-mighty-mouth-variable", sans-serif;
+		font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
+		width: 80%;
+		max-width: 80%;
+		margin: 0;
+		padding: 20px;
+
+	}
+
+	/* Styling for labels */
+	#contactForm label {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: bold;
+		color: #333;
+		/* dark gray */
+	}
+
+	/* Styling for input fields and textarea */
+	#contactForm input[type="text"],
+	#contactForm input[type="email"],
+	#contactForm textarea {
+		width: 80%;
+		padding: 10px;
+		margin-bottom: 15px;
+		border: 1px solid #d0d0d0;
+		background-color: #fff;
+	}
+
+	/* Styling for buttons */
+	#contactForm input[type="submit"],
+	#contactForm input[type="reset"] {
+		padding: 10px 20px;
+		border: none;
+		background-color: #000000;
+		color: #fff;
+		cursor: pointer;
+		margin-right: 5px;
+	}
+
+	/* Button hover effect */
+	#contactForm input[type="submit"]:hover,
+	#contactForm input[type="reset"]:hover {
+		background-color: #8C0303;
+	}
+
+	/* Styling for the required note */
+	#contactForm>span {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	/* Styling for the link */
+	#contactForm a {
+		color: #8C0303;
+		text-decoration: none;
+	}
+
+	#contactForm a:hover {
+		text-decoration: underline;
+	}

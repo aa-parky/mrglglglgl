@@ -8,18 +8,27 @@ body {
   align-items: center;
 }
 
-.header, .footer {
-  width: 100%;                /* occupy full width */
-  padding: 15px;              /* padding for aesthetic spacing */
-  background-color: #f9f9f9; /* similar light gray background as your form */
-  border: 1px solid #e0e0e0; /* light gray border similar to your form */
-  text-align: center;        /* center the content */
-  font-weight: bold;         /* bold text for emphasis */
-  margin-bottom: 20px;       /* space below the header */
+.header,
+.footer {
+  width: 100%;
+  /* occupy full width */
+  padding: 15px;
+  /* padding for aesthetic spacing */
+  background-color: #f9f9f9;
+  /* similar light gray background as your form */
+  border: 1px solid #e0e0e0;
+  /* light gray border similar to your form */
+  text-align: center;
+  /* center the content */
+  font-weight: bold;
+  /* bold text for emphasis */
+  margin-bottom: 20px;
+  /* space below the header */
 }
 
 .footer {
-  margin-top: 20px;          /* space above the footer */
+  margin-top: 20px;
+  /* space above the footer */
 }
 
 
@@ -82,9 +91,9 @@ body {
 
 /* Adjusted styling for the form to scale with col3 */
 #contactForm {
-  width: 80%;           
-  max-width: 80%;       
-  margin: 0;             
+  width: 80%;
+  max-width: 80%;
+  margin: 0;
   padding: 20px;
 
 }
@@ -94,7 +103,8 @@ body {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #333; /* dark gray */
+  color: #333;
+  /* dark gray */
 }
 
 /* Styling for input fields and textarea */
@@ -122,11 +132,11 @@ body {
 /* Button hover effect */
 #contactForm input[type="submit"]:hover,
 #contactForm input[type="reset"]:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
 }
 
 /* Styling for the required note */
-#contactForm > span {
+#contactForm>span {
   display: inline-block;
   margin-right: 10px;
 }
