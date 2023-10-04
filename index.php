@@ -167,7 +167,7 @@
 					</div>
 					<img src="img/bcs01.png" alt="Saul Goodman" style="max-width: 180px;">
 
-					<div speech-bubble pright atop style="--bbColor:#fdbb3c">
+					<div speech-bubble pright atop >
 						<div class="title"><?php echo $name; ?>'s Loot!</div>
 						<?php echo generateBTCauctions(); ?>
 					</div>
