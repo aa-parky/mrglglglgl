@@ -26,6 +26,8 @@
 	<?php include 'scripts/slug-line.php'; ?>
 	<!-- Date & Time -->
 	<?php include 'scripts/utc.php'; ?>
+	<!-- Tyrion's Tavern -->
+	<?php include 'scripts/tltt.php'; ?>
 	<!-- BTC Auctions -->
 	<?php include 'scripts/btc.php'; ?>
 
@@ -137,10 +139,17 @@
 			<section>
 				<figure class="comicPanel panel3">
 					<div class="panel3_topbox">
-						Cadaverclutch
-						<span class="panel3_topbox span">Coffin Co.</span>
+						Tyrion's Tavern Tales
 					</div>
-					<div class="panel3_content">Coming Soon!
+
+					<div class="panel3_content">
+						Tyrion's free advice!
+						<img src="img/tl00.png" alt="Tyrion Lannister" style="max-width: 180px;">
+					</div>
+
+					<div class="tl_speech_left">
+						<div><span class="tl span"><?php echo $name; ?></span>, listen</div>
+						<?php echo generatetltt(); ?>
 					</div>
 
 				</figure>
@@ -157,25 +166,25 @@
 
 			<!-- Panel 4 Goblin-->
 			<section>
+
 				<figure class="comicPanel panel4">
 					<div class="panel4_topbox">
 						Goldsnatch Graveyard Auctions
 					</div>
+
 					<div class="panel4_content">
-
 						<span class="panel4_content span"><?php echo $selectedPlayer['class_id']; ?></span> Gear
+						<img src="img/bcs01.png" alt="Saul Goodman" style="max-width: 180px;">
 					</div>
-					<img src="img/bcs01.png" alt="Saul Goodman" style="max-width: 180px;">
 
-					<div speech-bubble pright atop >
-						<div class="title"><?php echo $name; ?>'s Loot!</div>
+					<div class="bcs_speech_right">
+						<div><?php echo $name; ?>'s <span class="bcs span">Loot </span></div>
 						<?php echo generateBTCauctions(); ?>
 					</div>
 
 				</figure>
 			</section>
 		</div>
-
 
 		<!-- Bottom Panel Horizontal Wrapper -->
 		<div class="topPanelsContainer">
