@@ -1,0 +1,13 @@
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|png|jpg|jpeg|html|php)$">
+    Header set Cache-Control "private"
+  </FilesMatch>
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+RewriteEngine On
+RewriteRule ^data/ - [F,L]
+RewriteRule ^scripts/ - [F,L]
+
