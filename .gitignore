@@ -2,3 +2,4 @@
 .nova
 .vscode
 php_errorlog
+.well-known
