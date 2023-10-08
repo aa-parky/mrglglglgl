@@ -1,0 +1,60 @@
+Name: Slickpick Pocketgold
+Job Title: Chief Coffer Collector
+Name: Fizzlefix Geargrinder
+Job Title: Cartographer of Catacombs
+Name: Greasewheel Spindletoe
+Job Title: Maestro of Memorials
+Name: Boomspark Fizzfuse
+Job Title: Pyrotechnic Parting Planner
+Name: Glimmergaze Gemsnag
+Job Title: Treasure Trove Tidier
+Name: Shinyshoe Shufflestep
+Job Title: Dance Director for Dirges
+Name: Copperclink Coinkeeper
+Job Title: Gold Guardian & Gratuity Gatherer
+Name: Wrenchwrist Spinbolt
+Job Title: Mechanic of Mourning Machines
+Name: Snazzyhat Snapbrim
+Job Title: Couturier of Ceremonial Caps
+Name: Parchpage Quillquiver
+Job Title: Eulogy Editor Extraordinaire
+Name: Grizzlegrin Mugmirth
+Job Title: Beverage Boss for Bereavements
+Name: Tinkertap Hammerhold
+Job Title: Casket Craftsman & Sarcophagus Specialist
+Name: Gogglebright Lighthook
+Job Title: Luminary Lead for Lamentations
+Name: Sootfoot Ashsweep
+Job Title: Incineration Inspector & Ash Associate
+Name: Twistthread Stitchsnip
+Job Title: Shroud Sewer & Robe Repairer
+Name: Whistlewind Whizbang
+Job Title: Dirge DJ & Farewell Fanfare Facilitator
+Name: Noggleknob Nutsnatch
+Job Title: Gadget Guru for Graves
+Name: Bristlebrow Brushstroke
+Job Title: Tombstone Typographer & Monument Muralist
+Name: Jinglejangle Coinclash
+Job Title: Benefaction Broker & Penny Protector
+Name: Lusterlens Glintgaze
+Job Title: Optics Officer for Obsequies
+Name: Plinkplunk Pebbleput
+Job Title: Stone Setter for Sepulchers
+Name: Quibblequack Inkspill
+Job Title: Testament Transcriber & Will Writer
+Name: Fumblefist Flaskflip
+Job Title: Potion Provider for Partings
+Name: Gobblegulp Brewbubble
+Job Title: Elixir Expert & Draught Dealer
+Name: Rattletrap Geargiggle
+Job Title: Undertaker's Underling & Apparatus Adjuster
+Name: Glittergrit Sandscuff
+Job Title: Hourglass Handler for Halting Hours
+Name: Toggletoe Twistturn
+Job Title: Footwear Fitter for Final Footfalls
+Name: Cracklecraft Sparkspin
+Job Title: Firework Foreman for Farewell Fêtes
+Name: Puffpouch Smokeblow
+Job Title: Incense Instigator & Aroma Arranger
+Name: Jigglejar Jelljolt
+Job Title: Gelatinous Guardian for Grieving Guests
