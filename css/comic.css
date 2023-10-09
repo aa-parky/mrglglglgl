@@ -49,6 +49,17 @@
 		max-height: 38px;
 	}
 
+	.banner_logo_top a {
+		color: blanchedalmond;
+		text-decoration: none;
+	}
+
+	.banner_logo_top a:hover {
+		color: #1A8FD9;
+		text-decoration: none;
+	}
+
+
 	.banner_logo_top,
 	.banner_date {
 		background-color: black;

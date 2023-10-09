@@ -50,7 +50,7 @@
 		<div class="topBannerContainer">
 			<section class="topBanner_box">
 				<div class="banner_logo_top">
-					All the Hardcore <span class="banner_logo_top span">News!</span>
+					<a href="https://mrglglglgl.com/news/">All the Hardcore <span class="banner_logo_top span">News!*</span></a>
 				</div>
 
 				<div class="banner_centre">
@@ -76,7 +76,7 @@
 			</section>
 
 			<section class="topPanel">
-				<a href="#">Map</a>
+				<a href="https://mrglglglgl.com/news/">News</a>
 			</section>
 
 			<section class="topPanel">
