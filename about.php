@@ -44,8 +44,6 @@
 	<link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="css/responsive.css">
 
-	<!-- Speech bubbles font scaling script-->
-	<script type="text/javascript" src="scripts/speech-bubble.js"></script>
 	<!-- Ticker scrolling script-->
 	<script type="text/javascript" src="scripts/news_ticker.js"></script>
 	<!-- Ticker simulate typewriter effect script-->
@@ -137,7 +135,7 @@
 			<div id="footer-flex">
 				<div id="footer-left"><a href="index.php">Home</a></div>
 				<div id="footer-center">Privacy</div>
-				<div id="footer-right">News</div>
+				<div id="footer-right"><a href="https://mrglglglgl.com/news/">News</a></div>
 			</div>
 		</div>
 		<!-- END Footer -->

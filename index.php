@@ -216,7 +216,7 @@
             <div id="footer-flex">
                 <div id="footer-left"><a href="about.php">About</a></div>
                 <div id="footer-center">Privacy</div>
-                <div id="footer-right">News</div>
+                <div id="footer-right"><a href="https://mrglglglgl.com/news/">News</a></div>
             </div>
         </div>
         <!-- END Footer -->
