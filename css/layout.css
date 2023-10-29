@@ -1,0 +1,327 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* Fill the entire viewport height */
+	margin: 0;
+	/* Reset default margin */
+	background-color: #ffecb3;
+	background-image: url(../img/noise.webp);
+}
+
+.container {
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-columns: 1fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header-left header-center header-right"
+		"slug-topcap-ali mobspk-mobpic-mobchg playerspk-playerpic-botcap"
+		"aucpic auc-spk obit"
+		"horde-left horde-right ratification"
+		"footer footer footer";
+	gap: 0px;
+	width: 1000px;
+	height: 650px;
+	border: 8px solid;
+}
+
+.container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url('../img/az-map.webp');
+	opacity: 0.5;
+	/* Adjust this value for desired opacity */
+	z-index: -1;
+}
+
+.header-left {
+	grid-area: header-left;
+	height: 80px;
+}
+
+#header-left-flex {
+	display: flex;
+	flex-direction: column;
+	height: 80px;
+	flex-grow: 1;
+}
+
+.header-center {
+	grid-area: header-center;
+	position: relative;
+	display: flex;
+	height: 80px;
+}
+
+#header-center-flex {
+	display: flex;
+	flex-direction: column;
+	height: 80px;
+}
+
+#flex-header-sub {
+	display: flex;
+	flex-grow: 1;
+	align-items: flex-start;
+	min-height: 40px;
+}
+
+#news-ticker {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	top: 38px;
+	height: 40px;
+	width: 510px;
+}
+
+.header-right {
+	grid-area: header-right;
+	display: flex;
+	height: 80px;
+}
+
+#flex-header-right {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+#flex-header-mrgl {
+	z-index: 1;
+	flex-grow: 1;
+}
+
+.slug-topcap-ali {
+	grid-area: slug-topcap-ali;
+	position: relative;
+}
+
+#flex-sta {
+	display: flex;
+	flex-direction: column;
+}
+
+#slugline {
+	position: absolute;
+	top: -40px;
+}
+
+#top-caption {
+	position: absolute;
+	top: 10px;
+	left: 40px;
+}
+
+#ali-roll {
+	position: absolute;
+	top: 115px;
+	z-index: 1;
+}
+
+#ali-list p {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+.mobspk-mobpic-mobchg {
+	grid-area: mobspk-mobpic-mobchg;
+	position: relative;
+}
+
+#flex-mob {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	top: -55px;
+}
+
+#bubble-mob-scale {
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	width: 150px;
+}
+
+#mob-pic {
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	z-index: 1;
+}
+
+#mob-pic img {
+	width: 200px;
+	height: auto;
+}
+
+#bubble-chg-scale {
+	position: absolute;
+	top: 65px;
+	left: 268px;
+	z-index: 1;
+}
+
+.playerspk-playerpic-botcap {
+	grid-area: playerspk-playerpic-botcap;
+	position: relative;
+}
+
+#flex-player {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	top: -30px;
+}
+
+#bubble-right-scale {
+	position: absolute;
+	top: 5px;
+	left: 60px;
+	width: 200px;
+	z-index: 2;
+}
+
+#player-pic {
+	position: absolute;
+	top: 50px;
+	left: 65px;
+	z-index: 1;
+}
+
+#player-pic img {
+	width: 200px;
+	height: auto;
+}
+
+#bottom-caption {
+	position: absolute;
+	width: 300px;
+	top: 275px;
+	left: -10px;
+	z-index: 1;
+}
+
+.aucpic {
+	grid-area: aucpic;
+	position: relative;
+}
+
+#auction-pic img {
+	width: 150px;
+	height: auto;
+	position: absolute;
+	top: 80px;
+	left: 140px;
+}
+
+.auc-spk {
+	grid-area: auc-spk;
+	position: relative;
+}
+
+#bubble-auc-scale {
+	position: absolute;
+	top: 110px;
+	left: -15px;
+	width: 260px;
+}
+
+.obit {
+	grid-area: obit;
+	position: relative;
+}
+
+#obit-php {
+	position: absolute;
+	right: 10px;
+	top: 225px;
+	width: 380px;
+}
+
+.horde-left {
+	grid-area: horde-left;
+	align-self: self-end;
+	position: relative;
+}
+
+.horde-left p {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+#horde-header-left {
+	position: absolute;
+}
+
+#horde-left-roll {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+#horde-list-left {
+	width: 300px;
+}
+
+#horde-header-left {
+	top:-15px;
+}
+
+#lastrights {
+	position: absolute;
+	top: 10px;
+}
+
+.ratification {
+	grid-area: ratification;
+	align-self: self-end;
+}
+
+.horde-right {
+	grid-area: horde-right;
+	align-self: self-end;
+	position: relative;
+}
+
+#horde-right-roll {
+	position: absolute;
+	top: -30px;
+	left: -12px;
+}
+
+.horde-right p {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+.footer {
+	grid-area: footer;
+	height: 20px;
+	display: flex;
+	align-self: end;
+	z-index: 2;
+}
+
+#footer-flex {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#footer-left {
+	margin-left: 10px;
+}
+
+#footer-right {
+	margin-right: 10px;
+}

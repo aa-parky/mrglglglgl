@@ -1,0 +1,95 @@
+.bubble-mob {
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    border: 3px solid rgb(0, 0, 0);
+
+}
+
+.bubble-mob::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #8C0303;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+
+.bubble-chg {
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: max-content;
+    border: 3px solid #000000;
+}
+
+.bubble-chg::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 15px solid #8C0303;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bubble-player {
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid #000000;
+}
+
+.bubble-player::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #8C0303;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+
+.bubble-auc {
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    height: max-content;
+    border: 3px solid #000000;
+}
+
+.bubble-auc::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 15px solid #8C0303;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}

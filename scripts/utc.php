@@ -7,7 +7,7 @@ date_default_timezone_set('UTC');
 $currentDateTime = new DateTime();
 
 // Format the date and time
-$formattedDate = $currentDateTime->format('F, jS, Y');
+$formattedDate = $currentDateTime->format('jS, F, Y');
 
 // Echo the formatted date and time
 $formattedDate;

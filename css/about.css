@@ -1,152 +1,140 @@
 body {
-  background-color: #ffecb3;
-  background-image: url(../img/mocha-grunge.png);
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* Fill the entire viewport height */
+	margin: 0;
+	/* Reset default margin */
+	background-color: #ffecb3;
+	background-image: url(../img/noise.webp);
 }
 
-.header,
+.container {
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header-left header-center header-right"
+		"slugline slugline slugline"
+		"main main main"
+		"footer footer footer";
+	gap: 0px;
+	width: 1000px;
+	height: 650px;
+	border: 8px solid;
+}
+
+.container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url('../img/az-map.webp');
+	opacity: 0.5;
+	/* Adjust this value for desired opacity */
+	z-index: -1;
+}
+
+.header-left {
+	grid-area: header-left;
+	height: 80px;
+}
+
+#header-left-flex {
+	display: flex;
+	flex-direction: column;
+	height: 80px;
+	flex-grow: 1;
+}
+
+.header-center {
+	grid-area: header-center;
+	position: relative;
+	display: flex;
+	height: 80px;
+}
+
+#header-center-flex {
+	display: flex;
+	flex-direction: column;
+	height: 80px;
+}
+
+#flex-header-sub {
+	display: flex;
+	flex-grow: 1;
+	align-items: flex-start;
+	min-height: 40px;
+}
+
+#news-ticker {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	top: 38px;
+	height: 40px;
+	width: 510px;
+}
+
+.header-right {
+	grid-area: header-right;
+	display: flex;
+	height: 80px;
+}
+
+#flex-header-right {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+#flex-header-mrgl {
+	z-index: 1;
+	flex-grow: 1;
+}
+
+.slugline {
+	grid-area: slugline;
+	font-size: xxx-large;
+	font-family: "ccbiffbamboom", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: blanchedalmond;
+	margin-left: 20px;
+}
+
+.main {
+	grid-area: main;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 .footer {
-  width: 100%;
-  /* occupy full width */
-  padding: 15px;
-  /* padding for aesthetic spacing */
-  background-color: #f9f9f9;
-  /* similar light gray background as your form */
-  border: 1px solid #e0e0e0;
-  /* light gray border similar to your form */
-  text-align: center;
-  /* center the content */
-  font-weight: bold;
-  /* bold text for emphasis */
-  margin-bottom: 20px;
-  /* space below the header */
+	grid-area: footer;
+	height: 20px;
+	display: flex;
+	align-self: end;
+	z-index: 2;
 }
 
-.footer {
-  margin-top: 20px;
-  /* space above the footer */
+#footer-flex {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	width: 100%;
 }
 
-
-.flex-grid {
-  display: flex;
+#footer-left {
+	margin-left: 10px;
 }
 
-.col {
-  flex: 1;
-  font-family: "cc-mighty-mouth-variable", sans-serif;
-  font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
-  background: #ffecb3;
-  border: 3px solid #ffcc80;
-  border-radius: 5px;
-  padding: 8px;
-  min-width: 220px;
-  min-height: 300px;
-}
-
-.col1 {
-  margin-left: 20px;
-}
-
-.col2 {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.col3 {
-
-  min-width: 260px;
-}
-
-.col1_topbox {
-  border: 1px solid black;
-  background-color: #000000;
-  color: antiquewhite;
-  padding: 6px;
-  margin-bottom: 10px;
-  min-height: 30px;
-}
-
-.col2_topbox {
-  border: 1px solid black;
-  background-color: #000000;
-  color: antiquewhite;
-  padding: 6px;
-  margin-bottom: 10px;
-  min-height: 30px;
-}
-
-.col3_topbox {
-  border: 1px solid black;
-  background-color: #000000;
-  color: antiquewhite;
-  padding: 6px;
-  margin-bottom: 10px;
-  min-height: 30px;
-}
-
-/* Adjusted styling for the form to scale with col3 */
-#contactForm {
-  width: 80%;
-  max-width: 80%;
-  margin: 0;
-  padding: 20px;
-
-}
-
-/* Styling for labels */
-#contactForm label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #333;
-  /* dark gray */
-}
-
-/* Styling for input fields and textarea */
-#contactForm input[type="text"],
-#contactForm input[type="email"],
-#contactForm textarea {
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #d0d0d0;
-  background-color: #fff;
-}
-
-/* Styling for buttons */
-#contactForm input[type="submit"],
-#contactForm input[type="reset"] {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007BFF;
-  color: #fff;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-/* Button hover effect */
-#contactForm input[type="submit"]:hover,
-#contactForm input[type="reset"]:hover {
-  background-color: #0056b3;
-}
-
-/* Styling for the required note */
-#contactForm>span {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-/* Styling for the link */
-#contactForm a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-#contactForm a:hover {
-  text-decoration: underline;
+#footer-right {
+	margin-right: 10px;
 }

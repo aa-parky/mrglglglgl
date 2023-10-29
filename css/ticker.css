@@ -1,0 +1,40 @@
+/* Style for the news-ticker container */
+#news-ticker {
+	height: fit-content;
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: "itc-american-typewriter", serif;
+	font-weight: 500;
+	font-style: normal;
+	width: 334px;
+	z-index: 2;
+}
+
+/* Style for the scrolling text */
+#news-ticker p {
+	display: inline-block;
+	animation: scrollLeft 460s linear infinite;
+	padding-left: 100%;
+	margin-bottom: 1px;
+}
+
+@keyframes scrollLeft {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(calc(-100% + 100vw));
+	}
+}
+
+/* Style for individual letters */
+#typewriter-text span {
+	display: inline-block;
+	/* Additional styles for letters can be added here if needed */
+}
+
+/* a general style for ghosting, but since the opacity is set directly in JS, it's not strictly necessary here. */
+#ghost {
+	opacity: 0.6;
+}

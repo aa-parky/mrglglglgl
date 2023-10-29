@@ -1,0 +1,76 @@
+/* Retina Displays*/
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    #flex-header-mrgl {
+        padding: 10px 10px 10px 10px;
+    }
+
+    #slugline {
+        top: -60px;
+    }
+
+    #top-caption {
+        top: 5px;
+    }
+
+    #ali-roll {
+        top: 115px;
+    }
+
+    #bubble-mob-scale {
+        top: 15px;
+        left: 25px;
+    }
+
+    #mob-pic {
+        top: 70px;
+        left: 40px;
+    }
+
+    #bubble-chg-scale {
+        top: 65px;
+        left: 268px;
+    }
+
+    #bubble-right-scale {
+        top: 15px;
+        left: 60px;
+    }
+
+    #player-pic {
+        top: 65px;
+        left: 65px;
+    }
+
+    #bottom-caption {
+        top: 285px;
+    }
+
+    #obit-php {
+        top: 235px;
+    }
+
+    #auction-pic img {
+        top: 95px;
+        left: 140px;
+    }
+
+    #horde-header-left {
+        top:-5px;
+    }
+
+    #lastrights {
+        top: 25px;
+    }
+
+
+
+}
+
+/* iPhone 12 */
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {}
+
+
+/* 1/4 screen 2560x1440 with dev tools open */
+@media (min-width: 1025px) and (max-height: 700px) {}

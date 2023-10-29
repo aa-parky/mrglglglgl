@@ -1,0 +1,118 @@
+#slugline,
+#ali-header,
+#ali-list {
+	margin-left: 10px;
+}
+
+#top-caption,
+#bottom-caption,
+#obit-php {
+	border: 6px solid;
+	opacity: 0.7;
+	font-family: "captain-comic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: smaller;
+	padding: 6px;
+}
+
+#top-caption,
+#bottom-caption {
+	box-shadow: 10px 10px #2f5c2f;
+}
+
+#top-caption,
+#bottom-caption {
+	background-color: burlywood;
+}
+
+#obit-php {
+	background-color: #D9CE4E
+}
+
+
+.bubble-mob,
+.bubble-chg,
+.bubble-player,
+.bubble-auc {
+	font-family: "cc-mighty-mouth-variable", sans-serif;
+	font-variation-settings: 'wght' 400, 'ital' 0, 'BOUN' 0;
+}
+
+#mob-pic img,
+#player-pic img,
+#auction-pic img {
+	border: 8px solid;
+	opacity: 0.7;
+}
+
+#slugline {
+	font-size: xxx-large;
+	font-family: "ccbiffbamboom", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: blanchedalmond;
+}
+
+#ali-roll,
+#horde-left-roll,
+#horde-right-roll,
+.footer {
+	font-family: "itc-american-typewriter", serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: smaller;
+}
+
+#ali-header,
+#horde-header-left,
+#horde-header-right {
+	font-weight: 700;
+}
+
+.span-php {
+	color: #8C0303;
+	font-size: larger;
+}
+
+.span-dialog {
+	color: #8C0303;
+	font-size: larger;
+}
+
+.player_race_id,
+.player_class_id,
+.player_level,
+.player_name_obit,
+.player_obit_last {
+	font-family: "cc-mighty-mouth-variable", sans-serif;
+	font-variation-settings: 'wght' 700, 'ital' 10, 'BOUN' 0;
+	font-size: larger;
+	color: #8C0303;
+}
+
+.footer {
+	padding-bottom: 6px;
+	border-top: 2px dotted;
+}
+
+dialog {
+	background-color: blanchedalmond;
+	border: 8px solid #000000;
+	border-radius: 8px;
+	padding: 20px;
+	width: 300px;
+}
+
+dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.typer {
+	border: dotted 2px;
+	padding: 10px;
+	font-family: "itc-american-typewriter", serif;
+	font-weight: 400;
+	font-style: normal;
+}

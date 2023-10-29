@@ -2,234 +2,230 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Meta tags to prevent browser caching -->
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
+    <!-- Title for the webpage -->
+    <title>Mrmglglglgl Read it Before you are in it</title>
 
-	<!-- Title for the webpage -->
-	<title>Mrmglglglgl Read it Before you are in it</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-	<!-- Importing html2canvas library to capture page content as images -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <!-- Importing html2canvas library to capture page content as comic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <!-- Speech bubbles with content fetched using a PHP script -->
+    <?php include 'scripts/parse_collected_entries.php'; ?>
+    <!-- Slug-line generated using a PHP script -->
+    <?php include 'scripts/slug-line.php'; ?>
+    <!-- Date & Time -->
+    <?php include 'scripts/utc.php'; ?>
+    <!-- Sub-headline generated using a PHP script -->
+    <?php include 'scripts/top-caption.php'; ?>
+    <!-- Sub-headline generated using a PHP script -->
+    <?php include 'scripts/bottom-caption.php'; ?>
+    <!-- Sub-headline generated using a PHP script -->
+    <?php include 'scripts/murlocs-charge.php'; ?>
+    <!-- Auction Items -->
+    <?php include 'scripts/btc.php'; ?>
+    <!-- Ticker script -->
+    <?php include 'scripts/ticker.php'; ?>
+    <!-- Death Tally script -->
+    <?php include 'scripts/death-tally.php' ?>
 
-	<!-- Sub-headline generated using a PHP script -->
-	<?php include 'scripts/sub-headline.php'; ?>
-	<!-- Speech bubbles with content fetched using a PHP script -->
-	<?php include 'scripts/parse_master_alliance.php'; ?>
-	<!-- Sub-headline generated using a PHP script -->
-	<?php include 'scripts/murloc_endings.php'; ?>
-	<!-- Slug-line generated using a PHP script -->
-	<?php include 'scripts/slug-line.php'; ?>
-	<!-- Date & Time -->
-	<?php include 'scripts/utc.php'; ?>
-	<!-- Tyrion's Tavern -->
-	<?php include 'scripts/tltt.php'; ?>
-	<!-- BTC Auctions -->
-	<?php include 'scripts/btc.php'; ?>
+    <!-- Adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
+    <!-- Link to the site's stylesheets -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/ticker.css">
+    <link rel="stylesheet" href="css/speech-bubbles.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-	<!-- Scripts to handle the "save" and "refresh" button functionalities -->
-	<script src="scripts/save-button.js"></script>
-	<script src="scripts/refresh-button.js"></script>
+    <!-- Speech bubbles font scaling script-->
+    <script type="text/javascript" src="scripts/speech-bubble.js"></script>
+    <!-- Ticker scrolling script-->
+    <script type="text/javascript" src="scripts/news_ticker.js"></script>
+    <!-- Ticker simulate typewriter effect script-->
+    <script type="text/javascript" src="scripts/typewriter_text.js"></script>
 
-	<!-- Adobe fonts -->
-	<link rel="stylesheet" href="https://use.typekit.net/tkq4iko.css">
-	<!-- Link to the site's main stylesheet -->
-	<link rel="stylesheet" href="css/comic.css">
-	<link rel="stylesheet" href="css/speech.css">
 </head>
 
 <body>
-	<!-- Comic Wrapper -->
-	<div class="comicWrapper">
 
-		<!-- Top Banner Horizontal Wrapper -->
-		<div class="topBannerContainer">
-			<section class="topBanner_box">
-				<div class="banner_logo_top">
-					<a href="https://mrglglglgl.com/news/">All the Hardcore <span class="banner_logo_top span">News!*</span></a>
-				</div>
+    <div class="container">
 
-				<div class="banner_centre">
-					Heroic Deaths & Epic Fails
-				</div>
+        <!-- Header -->
+        <div class="header-left">
+            <div id="header-left-flex">
+                <div id="flex-header-news">All the Hardcore</div>
+                <div id="news_popout">News*!*</div>
+            </div>
+        </div>
+        <div class="header-center">
+            <div id="header-center-flex">
+                <div id="flex-header-sub">
+                    <?php echo generateSlugLine(); ?>
+                </div>
+                <div id="news-ticker" aria-hidden="true">
+                    <p>
+                        <span id="typewriter-text">
+                            <?php foreach ($players as $player) : ?>
+                                <?= $player['name'] ?> &nbsp; the &nbsp;<?= $player['race'] ?> &nbsp; <?= $player['class'] ?> &nbsp; @ &nbsp; <?= $player['level'] ?>,&nbsp;
+                            <?php endforeach; ?>
+                        </span>
+                    </p>
+                </div>
+            </div>
 
-				<div class="banner_mrgl">
-					Mrglglglgl
-				</div>
+        </div>
+        <div class="header-right">
+            <div id="flex-header-right">
+                <div id="flex-header-mrgl">mrglglgl</div>
+                <div id="flex-header-issue">Issue #
+                    <?php echo $formattedDate; ?>
+                </div>
+            </div>
+        </div>
+        <!-- END Header -->
 
-				<div class="banner_date">
-					Issue #
-					<?php echo $formattedDate; ?>
-				</div>
+        <!-- Slugline Top Captions and Alliance dead -->
+        <div class="slug-topcap-ali">
+            <div id="flex-sta">
+                <div id="slugline">Suddenly...</div>
+                <div id="top-caption">
+                    ...<?php echo generateSubHeadline(); ?>
+                </div>
+                <div id="ali-roll">
+                    <div id="ali-header">
+                        Alliance deaths ...
+                    </div>
+                    <div id="ali-list">
+                        <p>Landlocked Lollygaggers: <?php echo $human_deaths; ?></p>
+                        <p>Stout-gut Stumblestones: <?php echo $dwarf_deaths; ?></p>
+                        <p>Moonbeam Treehuggers: <?php echo $night_elf_deaths; ?></p>
+                        <p>Pint-sized Puffnuggets: <?php echo $gnome_deaths; ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Slugline Top Captions and Alliance dead -->
 
-			</section>
-		</div>
+        <!-- MOB Stack -->
+        <div class="mobspk-mobpic-mobchg">
+            <div id="flex-mob">
+                <div id="bubble-mob-scale" class="bubble-mob">
+                    <span class="span-php"><?php echo $name; ?></span> *!* mrglglgl
+                </div>
+                <div id="mob-pic">
+                    <img src="img/zMrGl-02.png" alt="Mr.Gl">
+                </div>
+                <div id="bubble-chg-scale" class="bubble-chg">
+                    <?php echo generateMurlocsChg(); ?>
+                </div>
+            </div>
+        </div>
+        <!-- END MOB Stack -->
 
-		<!-- Top Panel Horizontal Wrapper -->
-		<div class="topPanelsContainer">
-			<section class="topPanel">
-				<a href="https://mrglglglgl.com">Home</a>
-			</section>
+        <!-- Player Stack -->
+        <div class="playerspk-playerpic-botcap">
+            <div id="flex-player">
+                <div id="bubble-right-scale" class="bubble-player">
+                    <?php echo $lastWords; ?>
+                </div>
+                <div id="player-pic">
+                    <?php $image_file_name = "img/" . $race_id . ".png"; ?>
+                    <img src="<?php echo $image_file_name; ?>" alt="<?php echo $race_id; ?>">
+                </div>
+                <div id="bottom-caption">
+                    <?php echo generateMurlocEndings(); ?>
+                </div>
+            </div>
+        </div>
+        <!-- END Player Stack -->
 
-			<section class="topPanel">
-				<a href="https://mrglglglgl.com/news/">News</a>
-			</section>
+        <!-- Auctioneer Picture -->
+        <div class="aucpic">
+            <div id="auction-pic">
+                <img src="img/zAuc-01.png" alt="a Goblin Auctioneer">
+            </div>
+        </div>
+        <!-- END Auctioneer Picture -->
 
-			<section class="topPanel">
-				<a href="https://mrglglglgl.com/about.php">About</a>
-			</section>
+        <!-- Auctioneer Speech -->
+        <div class="auc-spk">
+            <div id="bubble-auc-scale" class="bubble-auc">
+                <span class="span-php"><?php echo $name; ?>'s loot !</span> <?php echo generateBTCauctions(); ?>
+            </div>
+        </div>
+        <!-- END Auctioneer Speech -->
 
-			<section class="topPanel">
-				<a href="https://mrglglglgl.com/about.php">Contact</a>
-			</section>
-		</div>
+        <!-- Obit Section -->
+        <div class="obit">
+            <div id="obit-php">
+                <?php echo $player_obit; ?>
+            </div>
+        </div>
+        <!-- END Obit Section -->
 
-		<!-- Main headline for the webpage -->
-		<div class="headline">
-			Suddenly...
-		</div>
+        <!-- Horde left list-->
+        <div class="horde-left">
+            <div id="horde-left-roll">
+                <div id="horde-header-left">
+                    <p>Lastrights Rumblecoin</p>
+                </div>
+                <div id="horde-list-left">
+                    <div id="lastrights">
+                        <?php include 'scripts/lastrights.php'; ?>
+                        <span class="span-dialog">* Click * </span>for further details, T&Cs and other indemnities.
 
-		<!-- Panel 1 -->
-		<section>
-			<figure class="comicPanel panel1" style="width: 50%;">
-				<img src="../img/MrGl.png" alt="Mrglglglgl" style="max-width: 100%; max-height: 100%;">
-				<figcaption class="comicCaption comicCaptionTop">
+                        <dialog id="detailsDialog">
+                            <p>Your dialog content here.</p>
+                            <button id="closeBtn">Close</button>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Horde left list-->
+        <script src="scripts/lastrights.js"></script>
 
-					<div class="sub-headline">
-						<?php echo generateSubHeadline(); ?>
-					</div>
+        <!-- Horde right List -->
+        <div class="horde-right">
+            <div id="horde-right-roll">
+                <div id="horde-header-right">
+                    <p>...Horde deaths...</p>
+                </div>
+                <div id="horde-list-right">
+                    <p>Green-gutted Gobblegrumps: <?php echo $orc_deaths; ?></p>
+                    <p>Mold-marinated Mopers: <?php echo $undead_deaths; ?></p>
+                    <p>Grass-guzzling Gigglegrazers: <?php echo $tauren_deaths; ?></p>
+                    <p>Lanky Legged Lollygobbler: <?php echo $troll_deaths; ?></p>
+                </div>
+            </div>
+        </div>
+        <!-- END Horde right List -->
 
-				</figcaption>
+        <div class="ratification"></div>
 
-				<div class="speech_left">
+        <!-- Footer -->
+        <div class="footer">
+            <div id="footer-flex">
+                <div id="footer-left"><a href="about.php">About</a></div>
+                <div id="footer-center">Privacy</div>
+                <div id="footer-right">News</div>
+            </div>
+        </div>
+        <!-- END Footer -->
 
-					<div class="mrgl-before">mrglglglgl...</div>
-					<div class="player_name">
-						<span><?php echo $name; ?>!</span>
-					</div>
-					<div class="mrgl-after">...mrglglglgl &#42;</div>
-				</div>
+    </div>
 
-				<div class="speech_right">
-					<div class="last_words">
-						<?php echo $lastWords; ?>
-					</div>
-				</div>
+    <!-- Buy me a coffee -->
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="aaparky" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting! Every penny helps." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
-				<div class="comicCaption comicCaptionBottom">
-					<div class="sub-headline">
-						<?php echo generateMurlocEndings(); ?>
-					</div>
-				</div>
-
-				<div class="copy span">
-					&copy; 2023 aa.parky
-				</div>
-
-			</figure>
-		</section>
-
-		<!-- Middle Comic Panels Wrapper -->
-		<div class="middleComicPanels">
-			<!-- Panel 3 Orc-->
-			<section>
-				<figure class="comicPanel panel3">
-					<div class="panel3_topbox">
-						Tyrion's Tavern Tales
-					</div>
-
-					<div class="panel3_content">
-						Tyrion's free advice!
-						<img src="img/tl00.png" alt="Tyrion Lannister" style="max-width: 180px;">
-					</div>
-
-					<div class="tl_speech_left">
-						<div><span class="tl span"><?php echo $name; ?></span>, listen</div>
-						<?php echo generatetltt(); ?>
-					</div>
-
-				</figure>
-			</section>
-
-
-			<!-- Panel 2 Obituary-->
-			<section>
-				<figure class="comicPanel panel2">
-					<div class="slug-line"><?php echo generateSlugLine(); ?></div>
-					<div class="player_obit"><?php echo $player_obit; ?></div>
-				</figure>
-			</section>
-
-			<!-- Panel 4 Goblin-->
-			<section>
-
-				<figure class="comicPanel panel4">
-					<div class="panel4_topbox">
-						Goldsnatch Graveyard Auctions
-					</div>
-
-					<div class="panel4_content">
-						<span class="panel4_content span"><?php echo $selectedPlayer['class_id']; ?></span> Gear
-						<img src="img/bcs01.png" alt="Saul Goodman" style="max-width: 180px;">
-					</div>
-
-					<div class="bcs_speech_right">
-						<div><?php echo $name; ?>'s <span class="bcs span">Loot </span></div>
-						<?php echo generateBTCauctions(); ?>
-					</div>
-
-				</figure>
-			</section>
-		</div>
-
-		<!-- Bottom Panel Horizontal Wrapper -->
-		<div class="topPanelsContainer">
-			<section class="topPanel">
-				<a href="https://mrglglglgl.com">Home</a>
-			</section>
-
-			<section class="topPanel">
-				<a href="#">Map</a>
-			</section>
-
-			<section class="topPanel">
-				<a href="https://mrglglglgl.com/about.php">About</a>
-			</section>
-
-			<section class="topPanel">
-				<a href="https://mrglglglgl.com/about.php">Contact</a>
-			</section>
-		</div>
-
-		<!-- Bottom Banner Horizontal Wrapper -->
-		<div class="btmBannerContainer">
-			<section class="btmBanner_box">
-				<div class="btm_logo">
-					<a href="#"> Death by Kobolds <span class="btm_logo span">Rising!</span></a>
-
-				</div>
-
-				<div class="btm_centre">
-					<a href="#">Wendigos Seek Revenge! </a>
-				</div>
-
-				<div class="btm_mrgl">
-					<a href="#">The Defias Register</a>
-				</div>
-
-				<div class="btm_date">
-					<a href="#">Site Map</a>
-				</div>
-
-			</section>
-		</div>
-
-	</div>
-	<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="aaparky" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting! Every penny helps." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 
 </html>

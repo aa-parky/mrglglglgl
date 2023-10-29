@@ -16,7 +16,7 @@ Death is but a loading screen for {name}, the spirited {race_id} {class_id} who 
 
 {name} might have left Azeroth at level {level}, but their legacy as the finest {race_id} {class_id} remains. They're probably sipping on Moonberry Juice somewhere beyond the stars now. In their last words they wanted Azeroth to know "{last_words}".
 
-A toast to {name}, the {race_id} {class_id} who charmed us all. At level {level}, they've hung up their gear, leaving behind tales of legend. May they never encounter a queue in the hereafter. "{last_words}",
+A toast to {name}, the {race_id} {class_id} who charmed us all. At level {level}, they've hung up their gear, leaving behind tales of legend. May they never encounter a queue in the hereafter. "{last_words}".
 
 From the misty coasts of Stranglethorn to the snowy peaks of Dun Morogh, {name}, the {race_id} {class_id} of level {level}, inspired all. Now they've set off on the grandest quest—into the unknown beyond. As their spirit left us it was heard whispering "{last_words}".
 
