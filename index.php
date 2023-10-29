@@ -183,7 +183,14 @@
                         <span class="span-dialog">* Click * </span>for further details, T&Cs and other indemnities.
 
                         <dialog id="detailsDialog">
-                            <p>Your dialog content here.</p>
+                            <p>*"Greetings, gold-grabbers and goblin-lovers! Before you go signing away your soul (or at least a sizable sack of silver), allow me, Lastrights Rumblecoin, to elucidate the nitty-gritty:
+                                
+                                Duration Deliberations: Every policy lasts till your next perilous plummet. Survive a fortnight? Fantastic! But if you falter in five minutes, fear not, we'll still fork over the funds.
+                                Expiry Exclusions: Beware! Deaths by dancing on inn tables or dalliances with dueling dummies aren't covered. We're Undermine Undertakers, not jesters!
+                                Payment Peculiarities: All payments to be made in pristine gold coins. No chicken, sheep, or curious trinkets! Goblins have standards, after all.
+                                Claim Clauses: Should you shuffle off this mortal coil (and have a valid policy), your next of kin must present the claim in person. Ghostly visitations, though entertaining, don't count.
+                                Resurrection Restrictions: Those revived by pesky priests or shamans should wait a week before claiming. We need to ensure you're truly 'dead-dead', not just 'mostly-dead'.
+                                So, there you have it! A smidge of small print for our sizable service. Remember, with Undermine Undertakers, you're not just buying insurance – you're investing in an afterlife adventure!"*</p>
                             <button id="closeBtn">Close</button>
                         </dialog>
                     </div>
@@ -216,7 +223,7 @@
             <div id="footer-flex">
                 <div id="footer-left"><a href="about.php">About</a></div>
                 <div id="footer-center">Privacy</div>
-                <div id="footer-right"><a href="https://mrglglglgl.com/news/">News</a></div>
+                <div id="footer-right">News</div>
             </div>
         </div>
         <!-- END Footer -->
